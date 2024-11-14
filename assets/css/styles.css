@@ -1,5 +1,13 @@
 /* import google fonts */
 
-/* root variables */
-
-/* body styles */
+/* Defining CSS variables for easy theme management */
+:root {
+  /* White/black color shades */
+  --clr-white: #fff;
+  --clr-black: #222;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
