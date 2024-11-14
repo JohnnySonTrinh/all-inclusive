@@ -8,6 +8,9 @@
     --background-color: #F5F5F5;  /* Soft White */
     --text-color: #333333;        /* Charcoal Gray */
     --accent-color: #FF7F50;      /* Warm Orange */
+    /* White/black color shades */
+    --white-color: #fff;
+    --black-color: #222;
 }
 
 /* body styles */
@@ -41,3 +44,4 @@ a {
 a:hover {
     color: var(--primary-color);
 }
+
