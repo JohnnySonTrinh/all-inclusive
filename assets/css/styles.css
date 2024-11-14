@@ -1,13 +1,47 @@
 /* import google fonts */
 
-/* Defining CSS variables for easy theme management */
+/* root variables */
 :root {
-  /* White/black color shades */
-  --clr-white: #fff;
-  --clr-black: #222;
+    /* Accessible Color Palette */
+    --primary-color: #1A5F7A;     /* Deep Blue */
+    --secondary-color: #20B2AA;   /* Teal */
+    --background-color: #F5F5F5;  /* Soft White */
+    --text-color: #333333;        /* Charcoal Gray */
+    --accent-color: #FF7F50;      /* Warm Orange */
+    /* White/black color shades */
+    --white-color: #fff;
+    --black-color: #222;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
+
+/* body styles */
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-light {
+    background-color: var(--background-color) !important;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
