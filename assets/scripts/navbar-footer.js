@@ -40,25 +40,25 @@ function loadFooter() {
       <footer class="bg-dark text-white text-center py-4">
           <div class="container">
               <!-- Contact link -->
-              <a href="contact.html" class="text-white me-3">
+              <a href="contact.html" class="text-white me-3 text-decoration-none">
                   <i class="fas fa-envelope"></i> Contact Us
               </a>
   
               <!-- Social Media Links -->
-              <a href="https://www.facebook.com/yourpage" target="_blank" class="text-white me-3">
+              <a href="https://www.facebook.com/yourpage" target="_blank" class="text-white me-3 text-decoration-none">
                   <i class="fab fa-facebook"></i>
               </a>
-              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-white me-3">
+              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-white me-3 text-decoration-none">
                   <i class="fab fa-linkedin"></i>
               </a>
-              <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-white">
+              <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-white text-decoration-none">
                   <i class="fab fa-instagram"></i>
               </a>
           </div>
       </footer>`;
   
     document.getElementById("footer-placeholder").insertAdjacentHTML("beforeend", footerHtml);
-  }
+}
   
   // Call the functions when the DOM is fully loaded
   document.addEventListener("DOMContentLoaded", function () {
