@@ -119,14 +119,26 @@ textarea {
 }
 
 /* Visually Hidden for Accessibility */
-.visually-hidden {
+.visually-hidden-focusable {
     position: absolute;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
+    left: -9999px;
+    top: auto;
     width: 1px;
     height: 1px;
     overflow: hidden;
-    white-space: nowrap;
+}
+
+.visually-hidden-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color); /* Highlight background for focus */
+    color: var(--white); /* Visible and accessible text color */
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 1000;
 }
 
 /* Responsive Adjustments */
