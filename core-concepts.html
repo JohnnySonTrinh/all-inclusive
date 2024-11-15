@@ -3,35 +3,422 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Add description-->
-    <!--Font awesome-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!--Add favicon-->
+    <!-- Add description -->
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add favicon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
-    <!--CSS-->
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <!-- Core Concepts Title-->
+    <!-- Core Concepts Title -->
     <title>Core Concepts</title>
   </head>
   <body>
-
     <!-- NavBar -->
     <div id="navbar-placeholder"></div>
 
-    <!--Header-->
-    <!--Main-->
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+      <h1>Core Concepts</h1>
+      <p>Explore Accessibility and Inclusive Design Principles</p>
+    </header>
 
-    <!--Footer-->
+    <!-- Main Content -->
+    <main class="container my-5">
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-tabs" id="coreConceptsTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="device-navigation-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#device-navigation"
+            type="button"
+            role="tab"
+            aria-controls="device-navigation"
+            aria-selected="true"
+          >
+            Device & Navigation
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="visual-accessibility-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#visual-accessibility"
+            type="button"
+            role="tab"
+            aria-controls="visual-accessibility"
+            aria-selected="false"
+          >
+            Visual Accessibility
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="media-interaction-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#media-interaction"
+            type="button"
+            role="tab"
+            aria-controls="media-interaction"
+            aria-selected="false"
+          >
+            Media & Interaction
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="form-accessibility-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#form-accessibility"
+            type="button"
+            role="tab"
+            aria-controls="form-accessibility"
+            aria-selected="false"
+          >
+            Form Accessibility
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="content-structure-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#content-structure"
+            type="button"
+            role="tab"
+            aria-controls="content-structure"
+            aria-selected="false"
+          >
+            Content Structure
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tabs Content -->
+      <section class="tab-content mt-4" id="coreConceptsTabsContent">
+        <!-- Device & Navigation -->
+        <section
+          class="tab-pane fade show active"
+          id="device-navigation"
+          role="tabpanel"
+          aria-labelledby="device-navigation-tab"
+        >
+          <header>
+            <h2 class="visually-hidden">Device & Navigation</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4">
+              <header>
+                <h3>Mobile and Touch Accessibility</h3>
+              </header>
+              <p>
+                Ensure your interfaces are optimized for touch interactions by
+                using responsive design, larger touch targets, and avoiding
+                hover-only interactions.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Keyboard Navigation</h3>
+              </header>
+              <p>
+                Make your site fully navigable using a keyboard. Focus should
+                follow logical sequences, and interactive elements should be
+                accessible using the <kbd>Tab</kbd> key.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Focus States</h3>
+              </header>
+              <p>
+                Use visible focus indicators to help users understand their
+                current position on the page. Avoid removing default focus
+                outlines unless replaced with custom styles.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Skip Links</h3>
+              </header>
+              <p>
+                Provide skip links to allow users to bypass repetitive content
+                and navigate directly to main sections, such as the primary
+                content area or navigation menu.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Landmarks</h3>
+              </header>
+              <p>
+                Use ARIA landmarks or semantic HTML elements, such as
+                <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and
+                <code>&lt;footer&gt;</code>, to help assistive technologies
+                navigate your site.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Visual Accessibility -->
+        <section
+          class="tab-pane fade"
+          id="visual-accessibility"
+          role="tabpanel"
+          aria-labelledby="visual-accessibility-tab"
+        >
+          <header>
+            <h2 class="visually-hidden">Visual Accessibility</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4">
+              <header>
+                <h3>Appearance</h3>
+              </header>
+              <p>
+                Ensure good contrast ratios, use readable font sizes, and avoid
+                overly stylized fonts. Ensure text is legible for all users.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Specialized Browsing Modes</h3>
+              </header>
+              <p>
+                Support high-contrast modes, dark themes, and other visual aids
+                that enhance user experience for visually impaired users.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Resize Text</h3>
+              </header>
+              <p>
+                Allow users to resize text without breaking the layout, ensuring
+                that the site remains functional at 200% zoom or more.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Headings</h3>
+              </header>
+              <p>
+                Use proper heading hierarchy (e.g., <code>&lt;h1&gt;</code> to
+                <code>&lt;h6&gt;</code>) to make content easy to scan and
+                navigate.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Alt Text Guidelines</h3>
+              </header>
+              <p>
+                Provide meaningful alt text for images, ensuring that the
+                description conveys the purpose of the image succinctly.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Media & Interaction -->
+        <section
+          class="tab-pane fade"
+          id="media-interaction"
+          role="tabpanel"
+          aria-labelledby="media-interaction-tab"
+        >
+          <header>
+            <h2 class="visually-hidden">Media & Interaction</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4">
+              <header>
+                <h3>Animation Accessibility</h3>
+              </header>
+              <p>
+                Avoid overly complex animations, and respect user preferences by
+                supporting the "reduce motion" setting.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Audio Accessibility</h3>
+              </header>
+              <p>
+                Provide controls to pause or adjust volume, and ensure audio
+                content doesn't play automatically.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Video Accessibility</h3>
+              </header>
+              <p>
+                Include captions, transcripts, and descriptive audio for videos
+                to make them accessible to all users.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Media Controls</h3>
+              </header>
+              <p>
+                Offer intuitive controls for media, such as play, pause, and
+                seek buttons, and ensure they are keyboard-accessible.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Error Messaging</h3>
+              </header>
+              <p>
+                Ensure error messages are clear, concise, and visually distinct.
+                Provide guidance for resolving errors effectively.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Form Accessibility -->
+        <section
+          class="tab-pane fade"
+          id="form-accessibility"
+          role="tabpanel"
+          aria-labelledby="form-accessibility-tab"
+        >
+          <header>
+            <h2 class="visually-hidden">Form Accessibility</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4">
+              <header>
+                <h3>Form Inputs</h3>
+              </header>
+              <p>
+                Use proper input types (e.g., <code>email</code>,
+                <code>tel</code>), and ensure labels are associated with their
+                inputs using <code>for</code> and <code>id</code>.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Form Grouping</h3>
+              </header>
+              <p>
+                Group related fields using <code>&lt;fieldset&gt;</code> and
+                provide a <code>&lt;legend&gt;</code> to explain the purpose of
+                the group.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Autocomplete</h3>
+              </header>
+              <p>
+                Implement autocomplete attributes for inputs to streamline data
+                entry and improve user experience.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Input Validation</h3>
+              </header>
+              <p>
+                Provide real-time validation feedback and use ARIA attributes,
+                such as <code>aria-invalid</code>, to improve accessibility.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Content Structure -->
+        <section
+          class="tab-pane fade"
+          id="content-structure"
+          role="tabpanel"
+          aria-labelledby="content-structure-tab"
+        >
+          <header>
+            <h2 class="visually-hidden">Content Structure</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4">
+              <header>
+                <h3>Page Titles</h3>
+              </header>
+              <p>
+                Provide descriptive and unique titles for each page to help
+                users and search engines understand the content.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Linear Flow</h3>
+              </header>
+              <p>
+                Ensure a logical reading order that supports linear navigation,
+                especially for users relying on assistive technology.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Logical Flow</h3>
+              </header>
+              <p>
+                Organize content logically to reduce cognitive load, grouping
+                related information and using headings effectively.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Tables and Tabular Data</h3>
+              </header>
+              <p>
+                Use semantic table elements (<code>&lt;table&gt;</code>,
+                <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>) and
+                provide meaningful summaries and captions.
+              </p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    <!--Scripts-->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/navbar-footer.js"></script>
-    <script src="assets/scripts/navigation.js"></script>
-    <script src="assets/scripts/themetoggle.js"></script>
-    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
