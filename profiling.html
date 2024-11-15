@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about web accessibility, semantic HTML, ARIA attributes, and inclusive design to create more accessible websites for all users."
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--Add favicon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>
+      Why Accessibility Matters: Real-Life Profiles and Key Features for an
+      Inclusive Web - All-inclusive
+    </title>
+    <!-- SEO and Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "",
+        "@type": "WebSite",
+        "name": "Inclusive Web Design",
+        "description": "A comprehensive guide to creating accessible websites",
+        "keywords": "web accessibility, semantic HTML, ARIA, inclusive design"
+      }
+    </script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- For keyboard-only users: A Hidden "skip to main content"-link -->
+    <a href="#semantic-html" class="visually-hidden-focusable"
+      >Skip to main content</a
+    >
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="row align-items-center">
+        <section>
+          <h1 class="display-4 fw-bold text-primary">
+            Why Accessibility Matters: Real-Life Profiles
+          </h1>
+
+          <p class="lead my-4">
+            To better understand the diverse needs for accessible websites, we
+            will now explore a range of profiles, each highlighting different
+            factors that influence accessibility requirements. These profiles
+            will illustrate how individuals, based on their unique
+            circumstances—whether it's a disability, socioeconomic challenges,
+            or technological limitations—benefit from specific website features.
+            By examining their needs, we will show how tailored accessibility
+            features, such as keyboard navigation, voice control, or
+            customizable text sizes, can make digital spaces more inclusive,
+            efficient, and user-friendly for everyone. This will help emphasize
+            why designing with accessibility in mind is essential for ensuring
+            equal access and participation in the digital world.
+          </p>
+        </section>
+
+        <section id="personas">
+          <div id="aria-attributes" class="row align-items-center my-5">
+            <div class="col-md-6 mb-5">
+              <h2 class="h3 mb-4">David Chambers</h2>
+              <p>
+                David, a highly skilled lawyer living in New York City, is
+                visually impaired. Despite his disability, David is known for
+                his exceptional abilities and sharp legal mind. To navigate the
+                digital world effectively, he relies on assistive technologies
+                like screen readers, which allow him to access and interact with
+                online content.
+              </p>
+
+              <p>
+                For David to perform his job at the highest level, digital
+                accessibility is crucial, including:
+              </p>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <strong> ⚫ Screen Reader Friendly:</strong> Websites and
+                  documents need to be compatible with screen readers, allowing
+                  David to listen to and understand content easily.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Clear Navigation:</strong> Logical and consistent
+                  navigation helps him move quickly through information without
+                  confusion.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Descriptive Alt Text:</strong> All images should
+                  include descriptive alt text so that visual content can be
+                  conveyed through auditory means.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Keyboard-Friendly Controls:</strong> Keyboard
+                  navigation allows David to efficiently use digital platforms
+                  without needing a mouse.
+                </li>
+              </ul>
+              <p>
+                Without these accessible design elements, David's ability to
+                work effectively and stay connected with his colleagues and
+                clients would be significantly hindered.
+              </p>
+            </div>
+            <div class="col-md-6 p-5">
+              <img
+                src="assets/images/developing.svg"
+                alt="ARIA Attributes Interaction Diagram"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-md-6 p-5">
+              <img
+                src="assets/images/developing.svg"
+                alt="ARIA Attributes Interaction Diagram"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-6 mb-5">
+              <h2 class="h3 mb-4">Tom McLaughlin</h2>
+              <p>
+                Tom, a tech consultant who frequently travels for work, is
+                taller and has larger-than-average hands, which sometimes makes
+                using small mobile devices challenging. He often needs to access
+                detailed technical documents, communicate with clients, and
+                manage projects while on the go, so having mobile-friendly and
+                accessible websites is crucial for his productivity.
+              </p>
+
+              <p>To meet Tom's needs, accessible design should include:</p>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <strong>⚫ Enlarged Text</strong> Larger, adjustable fonts
+                  help Tom read dense technical information clearly, especially
+                  on smaller screens.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Larger Touch Targets</strong> Buttons and links
+                  should be larger with more space between them to prevent
+                  mis-taps when navigating quickly.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Keyboard Navigation</strong> Ensures that Tom can
+                  use keyboard shortcuts or a portable keyboard efficiently,
+                  aiding in productivity during long travel.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Simplified Layout</strong> A clean and
+                  easy-to-navigate design prevents clutter, making it simpler
+                  for Tom to locate information without excessive scrolling or
+                  precise finger movements.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Voice Command Integration</strong> Voice-activated
+                  navigation helps Tom manage emails, review documents, and make
+                  quick notes without handling the device directly, which is
+                  especially useful in transit.
+                </li>
+              </ul>
+              <p>
+                Mobile-friendly websites optimized for these needs help Tom stay
+                connected, access crucial information, and maintain efficiency
+                without resorting to bulky devices, allowing him to work
+                seamlessly while traveling.
+              </p>
+            </div>
+
+            <div class="col-md-6 mb-5">
+              <h2 class="h3 mb-4">Emily Carter</h2>
+              <p>
+                Dr. Emily Carter, a renowned neurosurgeon, suffers from severe
+                nerve damage in both of her hands after a car accident. The
+                injuries, especially to her right hand, make fine motor
+                movements difficult and cause significant frustration. Despite
+                the physical challenges, Dr. Carter is determined to continue
+                her medical research and engage with the medical community
+                online.
+              </p>
+
+              <p>
+                To accommodate her needs, web accessibility tools are crucial,
+                including:
+              </p>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <strong>⚫ Keyboard Navigation:</strong> Enables Dr. Carter to
+                  move through websites, interact with forms, and access digital
+                  resources without using a mouse, reducing strain on her hands.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Voice Recognition Software:</strong> Allows her to
+                  navigate websites, search online, and fill out forms using
+                  voice commands, minimizing the need for typing and mouse use.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Text-to-Speech (TTS) Tools:</strong> These tools
+                  can read aloud digital content, helping Dr. Carter to consume
+                  information without extensive scrolling or highlighting.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Predictive Text and Auto-Completion:</strong> These
+                  features speed up text entry for forms and emails, minimizing
+                  the amount of manual typing needed.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Simplified Web Layouts:</strong> Websites designed
+                  with clean, minimal interfaces reduce the complexity of
+                  navigation, making it easier for her to focus on key content
+                  without excessive clicking or dragging.
+                </li>
+              </ul>
+              <p>
+                These web accessibility tools provide Dr. Carter with a more
+                comfortable and efficient way to engage with digital content,
+                allowing her to remain productive without aggravating her
+                physical limitations.
+              </p>
+            </div>
+            <div class="col-md-6 p-5">
+              <img
+                src="assets/images/developing.svg"
+                alt="ARIA Attributes Interaction Diagram"
+                class="img-fluid rounded"
+              />
+            </div>
+
+            <div class="col-md-6 p-5">
+              <img
+                src="assets/images/developing.svg"
+                alt="ARIA Attributes Interaction Diagram"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-6 mb-5">
+              <h2 class="h3 mb-4">Alexandra Olivia</h2>
+              <p>
+                Alex, a wildlife conservationist and field researcher, often
+                operates in remote locations where reliable internet connections
+                are scarce. To stay in touch with colleagues and access critical
+                research data, Alex relies on technology that performs well even
+                in challenging connectivity conditions.
+              </p>
+
+              <p>
+                To accommodate his needs, web accessibility solutions are
+                essential, including:
+              </p>
+
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <strong>⚫ Effective Caching Policies</strong>: Ensures that
+                  key data and web pages are stored locally, allowing Alex to
+                  access information quickly even with an intermittent
+                  connection.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Optimized for Slow Connections:</strong> Websites
+                  should be optimized to load efficiently with reduced
+                  bandwidth, ensuring Alex can retrieve vital data without long
+                  wait times.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Offline Access:</strong> Critical content should be
+                  available offline, enabling Alex to continue working and
+                  reviewing documents even without an internet connection.
+                </li>
+                <li class="mb-3">
+                  <strong>⚫ Minimal Data Usage:</strong> Websites should
+                  prioritize lightweight data, avoiding unnecessary images or
+                  videos to conserve bandwidth and speed up load times.
+                </li>
+
+                <li class="mb-3">
+                  <strong>⚫ Lightweight Design:</strong> Simplified layouts
+                  with minimal graphics and streamlined code ensure faster load
+                  times, making it easier for Alex to access essential tools and
+                  information without draining resources.
+                </li>
+              </ul>
+              <p>
+                These features provide Alex with reliable access to digital
+                content, enabling him to stay connected and perform his work
+                effectively, even in the most remote areas.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/navbar-footer.js"></script>
+    <script src="assets/scripts/navigation.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

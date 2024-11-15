@@ -1,7 +1,7 @@
 function loadNavbar() {
-    const currentPage = window.location.pathname;
+  const currentPage = window.location.pathname;
 
-    const navbarHtml = `
+  const navbarHtml = `
       <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
@@ -13,16 +13,31 @@ function loadNavbar() {
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                          <a class="nav-link ${currentPage === '/index.html' ? 'active' : ''}" href="index.html">Home</a>
+                          <a class="nav-link ${
+                            currentPage === "/index.html" ? "active" : ""
+                          }" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link ${currentPage === '/core-concepts.html' ? 'active' : ''}" href="core-concepts.html">Core Concepts</a>
+                          <a class="nav-link ${
+                            currentPage === "/profiling.html" ? "active" : ""
+                          }" href="profiling.html">Profiling</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link ${currentPage === '/about.html' ? 'active' : ''}" href="about.html">About Us</a>
+                          <a class="nav-link ${
+                            currentPage === "/core-concepts.html"
+                              ? "active"
+                              : ""
+                          }" href="core-concepts.html">Core Concepts</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link ${currentPage === '/contact.html' ? 'active' : ''}" href="contact.html">Contact</a>
+                          <a class="nav-link ${
+                            currentPage === "/about.html" ? "active" : ""
+                          }" href="about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link ${
+                            currentPage === "/contact.html" ? "active" : ""
+                          }" href="contact.html">Contact</a>
                       </li>
                       <li class="nav-item">
                           <a id="theme-toggle" href="#" class="nav-link">
@@ -35,12 +50,14 @@ function loadNavbar() {
           </div>
       </nav>`;
 
-    document.getElementById("navbar-placeholder").insertAdjacentHTML("afterbegin", navbarHtml);
+  document
+    .getElementById("navbar-placeholder")
+    .insertAdjacentHTML("afterbegin", navbarHtml);
 }
-  
-  // Function to load the Footer
+
+// Function to load the Footer
 function loadFooter() {
-    const footerHtml = `
+  const footerHtml = `
       <footer class="footer text-white text-center py-4">
           <div class="container">
               <!-- Contact link -->
@@ -60,12 +77,14 @@ function loadFooter() {
               </a>
           </div>
       </footer>`;
-  
-    document.getElementById("footer-placeholder").insertAdjacentHTML("beforeend", footerHtml);
+
+  document
+    .getElementById("footer-placeholder")
+    .insertAdjacentHTML("beforeend", footerHtml);
 }
-  
-  // Call the functions when the DOM is fully loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    loadNavbar();
-    loadFooter();
-  });
+
+// Call the functions when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  loadNavbar();
+  loadFooter();
+});
