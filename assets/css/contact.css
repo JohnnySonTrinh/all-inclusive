@@ -109,15 +109,6 @@ textarea {
     outline-offset: 2px;
 }
 
-/* Footer Styles */
-.footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--black-color); /* Black Footer */
-    color: var(--white);
-    margin-top: 2rem;
-}
-
 /* Visually Hidden for Accessibility */
 .visually-hidden-focusable {
     position: absolute;
