@@ -108,356 +108,309 @@
       <!-- Tabs Content -->
       <section class="tab-content mt-4" id="coreConceptsTabsContent">
         <!-- Device & Navigation -->
-        <div
+        <section
           class="tab-pane fade show active"
           id="device-navigation"
           role="tabpanel"
           aria-labelledby="device-navigation-tab"
         >
+          <header>
+            <h2 class="visually-hidden">Device & Navigation</h2>
+          </header>
           <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Mobile and Touch Accessibility</h5>
-                  <p class="card-text">
-                    Ensure your interfaces are optimized for touch interactions
-                    by using responsive design, larger touch targets, and
-                    avoiding hover-only interactions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Keyboard Navigation</h5>
-                  <p class="card-text">
-                    Make your site fully navigable using a keyboard. Focus
-                    should follow logical sequences, and interactive elements
-                    should be accessible using the <kbd>Tab</kbd> key.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Focus States</h5>
-                  <p class="card-text">
-                    Use visible focus indicators to help users understand their
-                    current position on the page. Avoid removing default focus
-                    outlines unless replaced with custom styles.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Skip Links</h5>
-                  <p class="card-text">
-                    Provide skip links to allow users to bypass repetitive
-                    content and navigate directly to main sections, such as the
-                    primary content area or navigation menu.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Landmarks</h5>
-                  <p class="card-text">
-                    Use ARIA landmarks or semantic HTML elements, such as
-                    <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and
-                    <code>&lt;footer&gt;</code>, to help assistive technologies
-                    navigate your site.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Mobile and Touch Accessibility</h3>
+              </header>
+              <p>
+                Ensure your interfaces are optimized for touch interactions by
+                using responsive design, larger touch targets, and avoiding
+                hover-only interactions.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Keyboard Navigation</h3>
+              </header>
+              <p>
+                Make your site fully navigable using a keyboard. Focus should
+                follow logical sequences, and interactive elements should be
+                accessible using the <kbd>Tab</kbd> key.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <header>
+                <h3>Focus States</h3>
+              </header>
+              <p>
+                Use visible focus indicators to help users understand their
+                current position on the page. Avoid removing default focus
+                outlines unless replaced with custom styles.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Skip Links</h3>
+              </header>
+              <p>
+                Provide skip links to allow users to bypass repetitive content
+                and navigate directly to main sections, such as the primary
+                content area or navigation menu.
+              </p>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Landmarks</h3>
+              </header>
+              <p>
+                Use ARIA landmarks or semantic HTML elements, such as
+                <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and
+                <code>&lt;footer&gt;</code>, to help assistive technologies
+                navigate your site.
+              </p>
+            </article>
           </div>
-        </div>
+        </section>
 
         <!-- Visual Accessibility -->
-        <div
+        <section
           class="tab-pane fade"
           id="visual-accessibility"
           role="tabpanel"
           aria-labelledby="visual-accessibility-tab"
         >
+          <header>
+            <h2 class="visually-hidden">Visual Accessibility</h2>
+          </header>
           <div class="row">
-            <!-- Appearance -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Appearance</h5>
-                  <p class="card-text">
-                    Ensure good contrast ratios, use readable font sizes, and
-                    avoid overly stylized fonts. Ensure text is legible for all
-                    users.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Appearance</h3>
+              </header>
+              <p>
+                Ensure good contrast ratios, use readable font sizes, and avoid
+                overly stylized fonts. Ensure text is legible for all users.
+              </p>
+            </article>
 
-            <!-- Specialized Browsing Modes -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Specialized Browsing Modes</h5>
-                  <p class="card-text">
-                    Support high-contrast modes, dark themes, and other visual
-                    aids that enhance user experience for visually impaired
-                    users.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Specialized Browsing Modes</h3>
+              </header>
+              <p>
+                Support high-contrast modes, dark themes, and other visual aids
+                that enhance user experience for visually impaired users.
+              </p>
+            </article>
 
-            <!-- Resize Text -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Resize Text</h5>
-                  <p class="card-text">
-                    Allow users to resize text without breaking the layout,
-                    ensuring that the site remains functional at 200% zoom or
-                    more.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Resize Text</h3>
+              </header>
+              <p>
+                Allow users to resize text without breaking the layout, ensuring
+                that the site remains functional at 200% zoom or more.
+              </p>
+            </article>
 
-            <!-- Headings -->
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Headings</h5>
-                  <p class="card-text">
-                    Use proper heading hierarchy (e.g.,
-                    <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) to make
-                    content easy to scan and navigate.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Headings</h3>
+              </header>
+              <p>
+                Use proper heading hierarchy (e.g., <code>&lt;h1&gt;</code> to
+                <code>&lt;h6&gt;</code>) to make content easy to scan and
+                navigate.
+              </p>
+            </article>
 
-            <!-- Alt Text Guidelines -->
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Alt Text Guidelines</h5>
-                  <p class="card-text">
-                    Provide meaningful alt text for images, ensuring that the
-                    description conveys the purpose of the image succinctly.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Alt Text Guidelines</h3>
+              </header>
+              <p>
+                Provide meaningful alt text for images, ensuring that the
+                description conveys the purpose of the image succinctly.
+              </p>
+            </article>
           </div>
-        </div>
+        </section>
+
         <!-- Media & Interaction -->
-        <div
+        <section
           class="tab-pane fade"
           id="media-interaction"
           role="tabpanel"
           aria-labelledby="media-interaction-tab"
         >
+          <header>
+            <h2 class="visually-hidden">Media & Interaction</h2>
+          </header>
           <div class="row">
-            <!-- Animation Accessibility -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Animation Accessibility</h5>
-                  <p class="card-text">
-                    Avoid overly complex animations, and respect user
-                    preferences by supporting the "reduce motion" setting.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Animation Accessibility</h3>
+              </header>
+              <p>
+                Avoid overly complex animations, and respect user preferences by
+                supporting the "reduce motion" setting.
+              </p>
+            </article>
 
-            <!-- Audio Accessibility -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Audio Accessibility</h5>
-                  <p class="card-text">
-                    Provide controls to pause or adjust volume, and ensure audio
-                    content doesn't play automatically.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Audio Accessibility</h3>
+              </header>
+              <p>
+                Provide controls to pause or adjust volume, and ensure audio
+                content doesn't play automatically.
+              </p>
+            </article>
 
-            <!-- Video Accessibility -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Video Accessibility</h5>
-                  <p class="card-text">
-                    Include captions, transcripts, and descriptive audio for
-                    videos to make them accessible to all users.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Video Accessibility</h3>
+              </header>
+              <p>
+                Include captions, transcripts, and descriptive audio for videos
+                to make them accessible to all users.
+              </p>
+            </article>
 
-            <!-- Media Controls -->
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Media Controls</h5>
-                  <p class="card-text">
-                    Offer intuitive controls for media, such as play, pause, and
-                    seek buttons, and ensure they are keyboard-accessible.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Media Controls</h3>
+              </header>
+              <p>
+                Offer intuitive controls for media, such as play, pause, and
+                seek buttons, and ensure they are keyboard-accessible.
+              </p>
+            </article>
 
-            <!-- Error Messaging -->
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Error Messaging</h5>
-                  <p class="card-text">
-                    Ensure error messages are clear, concise, and visually
-                    distinct. Provide guidance for resolving errors effectively.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Error Messaging</h3>
+              </header>
+              <p>
+                Ensure error messages are clear, concise, and visually distinct.
+                Provide guidance for resolving errors effectively.
+              </p>
+            </article>
           </div>
-        </div>
+        </section>
+
         <!-- Form Accessibility -->
-        <div
+        <section
           class="tab-pane fade"
           id="form-accessibility"
           role="tabpanel"
           aria-labelledby="form-accessibility-tab"
         >
+          <header>
+            <h2 class="visually-hidden">Form Accessibility</h2>
+          </header>
           <div class="row">
-            <!-- Form Inputs -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Form Inputs</h5>
-                  <p class="card-text">
-                    Use proper input types (e.g., <code>email</code>,
-                    <code>tel</code>), and ensure labels are associated with
-                    their inputs using <code>for</code> and <code>id</code>.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Form Inputs</h3>
+              </header>
+              <p>
+                Use proper input types (e.g., <code>email</code>,
+                <code>tel</code>), and ensure labels are associated with their
+                inputs using <code>for</code> and <code>id</code>.
+              </p>
+            </article>
 
-            <!-- Form Grouping -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Form Grouping</h5>
-                  <p class="card-text">
-                    Group related fields using <code>&lt;fieldset&gt;</code> and
-                    provide a <code>&lt;legend&gt;</code> to explain the purpose
-                    of the group.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Form Grouping</h3>
+              </header>
+              <p>
+                Group related fields using <code>&lt;fieldset&gt;</code> and
+                provide a <code>&lt;legend&gt;</code> to explain the purpose of
+                the group.
+              </p>
+            </article>
 
-            <!-- Autocomplete -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Autocomplete</h5>
-                  <p class="card-text">
-                    Implement autocomplete attributes for inputs to streamline
-                    data entry and improve user experience.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Autocomplete</h3>
+              </header>
+              <p>
+                Implement autocomplete attributes for inputs to streamline data
+                entry and improve user experience.
+              </p>
+            </article>
 
-            <!-- Input Validation -->
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Input Validation</h5>
-                  <p class="card-text">
-                    Provide real-time validation feedback and use ARIA
-                    attributes, such as <code>aria-invalid</code>, to improve
-                    accessibility.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Input Validation</h3>
+              </header>
+              <p>
+                Provide real-time validation feedback and use ARIA attributes,
+                such as <code>aria-invalid</code>, to improve accessibility.
+              </p>
+            </article>
           </div>
-        </div>
+        </section>
+
         <!-- Content Structure -->
-        <div
+        <section
           class="tab-pane fade"
           id="content-structure"
           role="tabpanel"
           aria-labelledby="content-structure-tab"
         >
+          <header>
+            <h2 class="visually-hidden">Content Structure</h2>
+          </header>
           <div class="row">
-            <!-- Page Titles -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Page Titles</h5>
-                  <p class="card-text">
-                    Provide descriptive and unique titles for each page to help
-                    users and search engines understand the content.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Page Titles</h3>
+              </header>
+              <p>
+                Provide descriptive and unique titles for each page to help
+                users and search engines understand the content.
+              </p>
+            </article>
 
-            <!-- Linear Flow -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Linear Flow</h5>
-                  <p class="card-text">
-                    Ensure a logical reading order that supports linear
-                    navigation, especially for users relying on assistive
-                    technology.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Linear Flow</h3>
+              </header>
+              <p>
+                Ensure a logical reading order that supports linear navigation,
+                especially for users relying on assistive technology.
+              </p>
+            </article>
 
-            <!-- Logical Flow -->
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Logical Flow</h5>
-                  <p class="card-text">
-                    Organize content logically to reduce cognitive load,
-                    grouping related information and using headings effectively.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4">
+              <header>
+                <h3>Logical Flow</h3>
+              </header>
+              <p>
+                Organize content logically to reduce cognitive load, grouping
+                related information and using headings effectively.
+              </p>
+            </article>
 
-            <!-- Tables and Tabular Data -->
-            <div class="col-md-4">
-              <div class="card mt-4">
-                <div class="card-body">
-                  <h5 class="card-title">Tables and Tabular Data</h5>
-                  <p class="card-text">
-                    Use semantic table elements (<code>&lt;table&gt;</code>,
-                    <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>) and
-                    provide meaningful summaries and captions.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <article class="col-md-4 mt-4">
+              <header>
+                <h3>Tables and Tabular Data</h3>
+              </header>
+              <p>
+                Use semantic table elements (<code>&lt;table&gt;</code>,
+                <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>) and
+                provide meaningful summaries and captions.
+              </p>
+            </article>
           </div>
-        </div>
+        </section>
       </section>
     </main>
 
