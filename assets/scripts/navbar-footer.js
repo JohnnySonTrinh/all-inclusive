@@ -30,6 +30,7 @@ function loadNavbar() {
                           </a>
                        </li>
                   </ul>
+                  <a id="font-toggle" href="#" class="nav-link">Toggle Dyslexic Font</a>
               </div>
           </div>
       </nav>`;
