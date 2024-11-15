@@ -1,4 +1,5 @@
 /* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* root variables */
 :root {
@@ -8,6 +9,7 @@
     --background-color: #F5F5F5;  /* Soft White */
     --text-color: #333333;        /* Charcoal Gray */
     --accent-color: #FF7F50;      /* Warm Orange */
+    --muted-color: #4f4e4e;
     /* White/black color shades */
     --white-color: #fff;
     --black-color: #222;
@@ -20,6 +22,7 @@
     --background-color: #121212;  /* True Dark Gray */
     --text-color: #E0E0E0;        /* Light Gray */
     --accent-color: #FF6347;      /* Vibrant Red-Orange */
+    --muted-color: #b3b2b2;
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -28,7 +31,16 @@
 body {
     color: var(--text-color);
     background-color: var(--background-color);
+    /* font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif; */
 }
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+} */
 
 .btn-primary {
     background-color: var(--primary-color);
@@ -68,6 +80,10 @@ a {
 
 a:hover {
     color: var(--primary-color);
+}
+
+.muted {
+    color: var(--muted-color);
 }
 
 .navbar,
