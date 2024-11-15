@@ -1,32 +1,8 @@
-/* Root Variables */
-:root {
-    --primary-color: #1A5F7A;
-    --secondary-color: #20B2AA;
-    --text-color: #333333;
-    --background-color: #F5F5F5;
-    --error-color: #FF0000;
-    --white: #FFFFFF;
-    /* White/Black color shades */
-    --white-color: #fff;
-    --black-color: #222; /* Black */
-}
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-}
-
 /* Header Styles */
 .header {
     text-align: center;
     padding: 2rem;
-    background-color: var(--black-color); /* Black Header */
-    color: var(--white);
+    color: var(--primary-color);
 }
 
 .header h1 {
