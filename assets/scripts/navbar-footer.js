@@ -1,7 +1,8 @@
-// Function to load the Navbar
 function loadNavbar() {
+  const currentPage = window.location.pathname;
+
   const navbarHtml = `
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
                   <img src="assets/images/logo.png" alt="Website Logo" class="logo-img" style="width: 120px;">
@@ -12,17 +13,37 @@ function loadNavbar() {
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                       <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          <a class="nav-link ${
+                            currentPage === "/index.html" ? "active" : ""
+                          }" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="profiling.html">Inclusivity</a>
+                          <a class="nav-link ${
+                            currentPage === "/profiling.html" ? "active" : ""
+                          }" href="profiling.html">Profiling</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="about.html">About Us</a>
+                          <a class="nav-link ${
+                            currentPage === "/core-concepts.html"
+                              ? "active"
+                              : ""
+                          }" href="core-concepts.html">Core Concepts</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="contact.html">Contact</a>
+                          <a class="nav-link ${
+                            currentPage === "/about.html" ? "active" : ""
+                          }" href="about.html">About Us</a>
                       </li>
+                      <li class="nav-item">
+                          <a class="nav-link ${
+                            currentPage === "/contact.html" ? "active" : ""
+                          }" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="theme-toggle" href="#" class="nav-link">
+                            <i id="theme-icon" class="fas fa-moon"></i>
+                          </a>
+                       </li>
                   </ul>
               </div>
           </div>
@@ -36,7 +57,7 @@ function loadNavbar() {
 // Function to load the Footer
 function loadFooter() {
   const footerHtml = `
-      <footer class="bg-dark text-white text-center py-4">
+      <footer class="footer text-white text-center py-4">
           <div class="container">
               <!-- Contact link -->
               <a href="contact.html" class="text-white me-3 text-decoration-none">
