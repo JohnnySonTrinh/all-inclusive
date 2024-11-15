@@ -24,6 +24,11 @@ function loadNavbar() {
                       <li class="nav-item">
                           <a class="nav-link ${currentPage === '/contact.html' ? 'active' : ''}" href="contact.html">Contact</a>
                       </li>
+                      <li class="nav-item">
+                          <a id="theme-toggle" href="#" class="nav-link">
+                            <i id="theme-icon" class="fas fa-moon"></i>
+                          </a>
+                       </li>
                   </ul>
               </div>
           </div>
