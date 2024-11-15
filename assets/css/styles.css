@@ -45,3 +45,7 @@ a:hover {
     color: var(--primary-color);
 }
 
+.navbar,
+.footer {
+    background-color: var(--primary-color);
+}
