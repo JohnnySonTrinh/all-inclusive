@@ -1,194 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Learn about web accessibility, semantic HTML, ARIA attributes, and inclusive design to create more accessible websites for all users.">
-  <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <!--Add favicon-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <title>All-inclusive</title>
-  <!-- SEO and Structured Data -->
-  <script type="application/ld+json">
-    {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about web accessibility, semantic HTML, ARIA attributes, and inclusive design to create more accessible websites for all users."
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!--Add favicon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>All-inclusive</title>
+    <!-- SEO and Structured Data -->
+    <script type="application/ld+json">
+      {
         "@context": "",
         "@type": "WebSite",
         "name": "Inclusive Web Design",
         "description": "A comprehensive guide to creating accessible websites",
         "keywords": "web accessibility, semantic HTML, ARIA, inclusive design"
-    }
+      }
     </script>
-</head>
-<body>
-  <!-- NavBar -->
+  </head>
+  <body>
+    <!-- NavBar -->
     <div id="navbar-placeholder"></div>
-  
-  <!-- For keyboard-only users: A Hidden "skip to main content"-link -->
-  <a href="#semantic-html" class="visually-hidden-focusable">Skip to main content</a>
-  <!-- Main Content -->
-  <main class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h1 class="display-4 fw-bold text-primary">
-          Build Websites for <span class="text-decoration-underline">Everyone</span>
-        </h1>
+
+    <!-- For keyboard-only users: A Hidden "skip to main content"-link -->
+    <a href="#semantic-html" class="visually-hidden-focusable"
+      >Skip to main content</a
+    >
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold text-primary">
+            Build Websites for
+            <span class="text-decoration-underline">Everyone</span>
+          </h1>
+          <p class="lead my-4">
+            Accessibility isn't just a feature—it's a fundamental right. We're
+            here to guide developers in creating digital experiences that are
+            inclusive, usable, and empowering for all users, regardless of their
+            abilities.
+          </p>
+          <div class="d-flex gap-3">
+            <a
+              href="#"
+              class="btn btn-primary btn-lg"
+              aria-label="Start Learning Accessibility"
+            >
+              Get Started
+            </a>
+            <a
+              href="#"
+              class="btn btn-outline-secondary btn-lg"
+              aria-label="View Accessibility Tools"
+            >
+              Explore Tools
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 p-5">
+          <img
+            src="assets/images/illustration.svg"
+            alt="Diverse users interacting with digital devices"
+            class="img-fluid"
+            aria-describedby="image-description"
+          />
+        </div>
+      </div>
+      <section>
+        <h2 class="display-6 fw-bold text-primary mt-4">
+          Accessibility Matters
+        </h2>
+
         <p class="lead my-4">
-          Accessibility isn't just a feature—it's a fundamental right. We're here to guide developers in creating
-          digital experiences that are inclusive, usable, and empowering for all users, regardless of their abilities.
+          <strong
+            >Accessible websites benefit everyone, not just people with
+            disabilities.</strong
+          >
+          Accessibility ensures that all users, regardless of their physical
+          abilities, socioeconomic status, or technological limitations, can
+          access and engage with online content. Whether it's a person using an
+          older device, someone with limited data, or an individual with a
+          temporary impairment, accessible design helps bridge gaps and remove
+          barriers. It's about creating a digital environment that adapts to the
+          diverse needs of all users, making sure that everyone can participate
+          equally in the digital world.
         </p>
-        <div class="d-flex gap-3">
-          <a href="#" class="btn btn-primary btn-lg" aria-label="Start Learning Accessibility">
-            Get Started
+        <a
+          href="profiling.html"
+          class="btn btn-primary btn-lg"
+          aria-label="Start Learning Accessibility"
+        >
+          Learn More
+        </a>
+      </section>
+      <!-- Key Focus Areas -->
+      <section class="row my-5 g-4">
+        <div class="col-md-4">
+          <a href="#semantic-html" class="text-decoration-none">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title h4">
+                  <span class="text-primary">★</span> Semantic HTML
+                </h2>
+                <p class="card-text">
+                  Learn how proper HTML structure creates the foundation for an
+                  accessible web experience.
+                </p>
+              </div>
+            </div>
           </a>
-          <a href="#" class="btn btn-outline-secondary btn-lg" aria-label="View Accessibility Tools">
-            Explore Tools
+        </div>
+        <div class="col-md-4">
+          <a href="#aria-attributes" class="text-decoration-none">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title h4">
+                  <span class="text-primary">★</span> ARIA Attributes
+                </h2>
+                <p class="card-text">
+                  Discover how ARIA roles and attributes enhance interaction for
+                  users with assistive technologies.
+                </p>
+              </div>
+            </div>
           </a>
         </div>
-      </div>
-      <div class="col-lg-6 p-5">
-        <img src="assets/images/illustration.svg" alt="Diverse users interacting with digital devices" class="img-fluid"
-          aria-describedby="image-description">
-      </div>
-    </div>
-    <!-- Key Focus Areas -->
-    <section class="row my-5 g-4">
-      <div class="col-md-4">
-        <a href="#semantic-html" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title h4">
-                <span class="text-primary">★</span> Semantic HTML
-              </h2>
-              <p class="card-text">
-                Learn how proper HTML structure creates the foundation for an accessible web experience.
-              </p>
+        <div class="col-md-4">
+          <a href="#inclusive-design" class="text-decoration-none">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title h4">
+                  <span class="text-primary">★</span> Inclusive Design
+                </h2>
+                <p class="card-text">
+                  Explore design principles that create seamless experiences for
+                  users of all abilities.
+                </p>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#aria-attributes" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title h4">
-                <span class="text-primary">★</span> ARIA Attributes
-              </h2>
-              <p class="card-text">
-                Discover how ARIA roles and attributes enhance interaction for users with assistive technologies.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#inclusive-design" class="text-decoration-none">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title h4">
-                <span class="text-primary">★</span> Inclusive Design
-              </h2>
-              <p class="card-text">
-                Explore design principles that create seamless experiences for users of all abilities.
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <!-- Detailed Sections for Key Accessibility Aspects -->
-    <section id="detailed-sections" class="container">
-      <!-- Semantic HTML Section -->
-      <div id="semantic-html" class="row align-items-center my-5">
-        <div class="col-md-6 order-md-2">
-          <h2 class="h3 mb-4">Semantic HTML: Building Meaningful Structures</h2>
-          <p class="lead">Semantic HTML provides context and meaning to web content, making it more accessible and
-            understandable for both browsers and assistive technologies.</p>
+          </a>
+        </div>
+      </section>
+      <!-- Detailed Sections for Key Accessibility Aspects -->
+      <section id="detailed-sections" class="container">
+        <!-- Semantic HTML Section -->
+        <div id="semantic-html" class="row align-items-center my-5">
+          <div class="col-md-6 order-md-2">
+            <h2 class="h3 mb-4">
+              Semantic HTML: Building Meaningful Structures
+            </h2>
+            <p class="lead">
+              Semantic HTML provides context and meaning to web content, making
+              it more accessible and understandable for both browsers and
+              assistive technologies.
+            </p>
 
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <strong>✓ Improves Screen Reader Navigation</strong>
-              <p class="text-muted">Helps assistive technologies understand page structure</p>
-            </li>
-            <li class="mb-3">
-              <strong>✓ Enhances SEO</strong>
-              <p class="text-muted">Search engines better understand your content</p>
-            </li>
-            <li>
-              <strong>✓ Creates Meaningful Document Hierarchy</strong>
-              <p class="text-muted">Provides clear, logical content organization</p>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary mt-3">Learn More</a>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong>✓ Improves Screen Reader Navigation</strong>
+                <p class="text-muted">
+                  Helps assistive technologies understand page structure
+                </p>
+              </li>
+              <li class="mb-3">
+                <strong>✓ Enhances SEO</strong>
+                <p class="text-muted">
+                  Search engines better understand your content
+                </p>
+              </li>
+              <li>
+                <strong>✓ Creates Meaningful Document Hierarchy</strong>
+                <p class="text-muted">
+                  Provides clear, logical content organization
+                </p>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+          <div class="col-md-6 order-md-1 p-5">
+            <img
+              src="assets/images/coder.svg"
+              alt="Semantic HTML Structure Visualization"
+              class="img-fluid rounded"
+            />
+          </div>
         </div>
-        <div class="col-md-6 order-md-1 p-5">
-          <img src="assets/images/coder.svg" alt="Semantic HTML Structure Visualization" class="img-fluid rounded">
-        </div>
-      </div>
-      <!-- ARIA Attributes Section -->
-      <div id="aria-attributes" class="row align-items-center my-5">
-        <div class="col-md-6">
-          <h2 class="h3 mb-4">ARIA Attributes: Enhancing Interaction</h2>
-          <p class="lead">ARIA (Accessible Rich Internet Applications) provides additional context for assistive
-            technologies, bridging gaps in native HTML accessibility.</p>
+        <!-- ARIA Attributes Section -->
+        <div id="aria-attributes" class="row align-items-center my-5">
+          <div class="col-md-6">
+            <h2 class="h3 mb-4">ARIA Attributes: Enhancing Interaction</h2>
+            <p class="lead">
+              ARIA (Accessible Rich Internet Applications) provides additional
+              context for assistive technologies, bridging gaps in native HTML
+              accessibility.
+            </p>
 
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <strong>✓ Extends HTML Semantics</strong>
-              <p class="text-muted">Adds deeper meaning to web elements</p>
-            </li>
-            <li class="mb-3">
-              <strong>✓ Improves Dynamic Content Accessibility</strong>
-              <p class="text-muted">Helps screen readers understand complex interactions</p>
-            </li>
-            <li>
-              <strong>✓ Provides Additional Context</strong>
-              <p class="text-muted">Explains element roles and states</p>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary mt-3">Explore ARIA</a>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong>✓ Extends HTML Semantics</strong>
+                <p class="text-muted">Adds deeper meaning to web elements</p>
+              </li>
+              <li class="mb-3">
+                <strong>✓ Improves Dynamic Content Accessibility</strong>
+                <p class="text-muted">
+                  Helps screen readers understand complex interactions
+                </p>
+              </li>
+              <li>
+                <strong>✓ Provides Additional Context</strong>
+                <p class="text-muted">Explains element roles and states</p>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Explore ARIA</a>
+          </div>
+          <div class="col-md-6 p-5">
+            <img
+              src="assets/images/developing.svg"
+              alt="ARIA Attributes Interaction Diagram"
+              class="img-fluid rounded"
+            />
+          </div>
         </div>
-        <div class="col-md-6 p-5">
-          <img src="assets/images/developing.svg" alt="ARIA Attributes Interaction Diagram" class="img-fluid rounded">
+        <!-- Inclusive Design Section -->
+        <div id="inclusive-design" class="row align-items-center my-5">
+          <div class="col-md-6 order-md-2">
+            <h2 class="h3 mb-4">Inclusive Design: Universal Experiences</h2>
+            <p class="lead">
+              Inclusive design ensures digital experiences are usable by people
+              with diverse abilities, backgrounds, and technologies.
+            </p>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong>✓ Eliminates Barriers</strong>
+                <p class="text-muted">
+                  Creates experiences accessible to everyone
+                </p>
+              </li>
+              <li class="mb-3">
+                <strong>✓ Supports Diverse User Needs</strong>
+                <p class="text-muted">Considers various interaction methods</p>
+              </li>
+              <li>
+                <strong>✓ Promotes Digital Equality</strong>
+                <p class="text-muted">
+                  Ensures fair access to digital resources
+                </p>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Design Principles</a>
+          </div>
+          <div class="col-md-6 order-md-1 p-5">
+            <img
+              src="assets/images/showing-support.svg"
+              alt="Inclusive Design Representation"
+              class="img-fluid rounded"
+            />
+          </div>
         </div>
-      </div>
-      <!-- Inclusive Design Section -->
-      <div id="inclusive-design" class="row align-items-center my-5">
-        <div class="col-md-6 order-md-2">
-          <h2 class="h3 mb-4">Inclusive Design: Universal Experiences</h2>
-          <p class="lead">Inclusive design ensures digital experiences are usable by people with diverse abilities,
-            backgrounds, and technologies.</p>
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <strong>✓ Eliminates Barriers</strong>
-              <p class="text-muted">Creates experiences accessible to everyone</p>
-            </li>
-            <li class="mb-3">
-              <strong>✓ Supports Diverse User Needs</strong>
-              <p class="text-muted">Considers various interaction methods</p>
-            </li>
-            <li>
-              <strong>✓ Promotes Digital Equality</strong>
-              <p class="text-muted">Ensures fair access to digital resources</p>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-primary mt-3">Design Principles</a>
-        </div>
-        <div class="col-md-6 order-md-1 p-5">
-          <img src="assets/images/showing-support.svg" alt="Inclusive Design Representation" class="img-fluid rounded">
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <div id="footer-placeholder"></div>
-  
-  <!--Scripts-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/scripts/navbar-footer.js"></script>
-  <script src="assets/scripts/navigation.js"></script>
-  <script src="assets/scripts/main.js"></script>
-</body>
+      </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/navbar-footer.js"></script>
+    <script src="assets/scripts/navigation.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
 </html>

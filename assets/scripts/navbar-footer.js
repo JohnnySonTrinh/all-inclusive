@@ -1,6 +1,6 @@
 // Function to load the Navbar
 function loadNavbar() {
-    const navbarHtml = `
+  const navbarHtml = `
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
@@ -15,10 +15,7 @@ function loadNavbar() {
                           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="services.html">Services</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="demo.html">Demo</a>
+                          <a class="nav-link" href="profiling.html">Inclusivity</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="about.html">About Us</a>
@@ -30,13 +27,15 @@ function loadNavbar() {
               </div>
           </div>
       </nav>`;
-  
-    document.getElementById("navbar-placeholder").insertAdjacentHTML("afterbegin", navbarHtml);
-  }
-  
-  // Function to load the Footer
+
+  document
+    .getElementById("navbar-placeholder")
+    .insertAdjacentHTML("afterbegin", navbarHtml);
+}
+
+// Function to load the Footer
 function loadFooter() {
-    const footerHtml = `
+  const footerHtml = `
       <footer class="bg-dark text-white text-center py-4">
           <div class="container">
               <!-- Contact link -->
@@ -56,12 +55,14 @@ function loadFooter() {
               </a>
           </div>
       </footer>`;
-  
-    document.getElementById("footer-placeholder").insertAdjacentHTML("beforeend", footerHtml);
+
+  document
+    .getElementById("footer-placeholder")
+    .insertAdjacentHTML("beforeend", footerHtml);
 }
-  
-  // Call the functions when the DOM is fully loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    loadNavbar();
-    loadFooter();
-  });
+
+// Call the functions when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  loadNavbar();
+  loadFooter();
+});
