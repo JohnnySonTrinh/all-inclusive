@@ -18,8 +18,9 @@
     --accent-color: #FF7F50;      /* Warm Orange */
     --muted-color: #4f4e4e;
     --links-color: #fff;
-    --nav-hover-color: #d6d5d5;      /* Accent color (Warm Orange) */
-    --nav-active-color: #f37a62;     /* Light Warm Peach for active state */
+    --nav-hover-color: #d6d5d5;
+    --nav-active-color: #FFE6BD;
+
     /* --navbar-color: #1A5F7A; */
     /* White/black color shades */
     --white-color: #fff;
@@ -28,15 +29,15 @@
 
 [data-theme="dark"] {
     /* Accessible Dark Mode Variables */
-    --primary-color: #4A90A4;     /* Brighter Blue */
-    --secondary-color: #36BFBF;   /* Vivid Teal */
+    --primary-color: #83B7C9;    /* Brighter Blue */
+    --secondary-color: #2BD4CB;   /* Vivid Teal */
     --background-color: #121212;  /* True Dark Gray */
     --text-color: #E0E0E0;        /* Light Gray */
     --accent-color: #FF6347;      /* Vibrant Red-Orange */
     --muted-color: #b3b2b2;
     --links-color: #000;
     --nav-hover-color: #373636;      /* Vibrant Red-Orange */
-    --nav-active-color: #f54623;     /* Pale Peach for active state */
+    --nav-active-color: #690000;     /* Pale Peach for active state */
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -98,6 +99,10 @@ a:hover {
 
 .muted {
     color: var(--muted-color);
+}
+
+.emoji {
+    color: #1A5F7A;
 }
 
 .navbar,
