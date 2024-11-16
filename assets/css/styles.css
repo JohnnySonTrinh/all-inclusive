@@ -33,7 +33,6 @@
     --accent-color: #FF6347;      /* Vibrant Red-Orange */
     --muted-color: #b3b2b2;
     --links-color: #000;
-    /* --navbar-color: #2C5A63; */
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -130,8 +129,8 @@ a:hover {
 
 #theme-toggle {
     color: var(--links-color);
-    font-size: 1.2rem;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 #theme-toggle:hover {
@@ -141,6 +140,7 @@ a:hover {
 #font-toggle {
     color: var(--links-color);
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 #font-toggle:hover {
@@ -150,3 +150,12 @@ a:hover {
 .link {
     color: var(--links-color) !important;
 }
+
+.dropdown-menu {
+    background-color: var(--primary-color)!important;
+    max-width: 150px !important;
+    min-width: 120px !important;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
