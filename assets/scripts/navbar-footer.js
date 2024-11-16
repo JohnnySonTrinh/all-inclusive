@@ -50,7 +50,7 @@ function loadNavbar() {
                                         <i id="theme-icon" class="fas fa-moon"></i>
                                         Toggle Theme
                                     </a>
-                                <li><a class="dropdown-item" href="#" id="font-toggle"><i class="fas fa-font"></i> Toggle Font</a></li>
+                                <li class="nav-item"><a href="#" id="font-toggle" class="nav-link"><i class="fas fa-font"></i> Toggle Font</a></li>
                             </ul>
                         </li>    
                   </ul>
