@@ -18,6 +18,8 @@
     --accent-color: #FF7F50;      /* Warm Orange */
     --muted-color: #4f4e4e;
     --links-color: #fff;
+    --nav-hover-color: #d6d5d5;      /* Accent color (Warm Orange) */
+    --nav-active-color: #f37a62;     /* Light Warm Peach for active state */
     /* --navbar-color: #1A5F7A; */
     /* White/black color shades */
     --white-color: #fff;
@@ -33,6 +35,8 @@
     --accent-color: #FF6347;      /* Vibrant Red-Orange */
     --muted-color: #b3b2b2;
     --links-color: #000;
+    --nav-hover-color: #373636;      /* Vibrant Red-Orange */
+    --nav-active-color: #f54623;     /* Pale Peach for active state */
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -101,20 +105,38 @@ a:hover {
     background-color: var(--primary-color);
 }
 
+.navbar-toggler {
+    border: solid var(--links-color) !important;
+}
+
+.navbar-toggler-icon {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
 .nav-link {
     color: var(--links-color);
     position: relative;
     transition: color 0.3s ease;
 }
 
+.nav-link:hover {
+    color: var(--nav-hover-color);
+    transform: translateY(-2px);
+}
+
 .nav-link.active {
-    color: var(--links-color) !important;
+    color: var(--nav-active-color) !important;
+    font-weight: bold;
 }
 
 .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
@@ -157,5 +179,46 @@ a:hover {
     min-width: 120px !important;
     border: 3px solid var(--primary-color);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 4px solid var(--accent-color);
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer a:hover {
+    color: var(--nav-active-color);
+    transform: translateY(-3px);
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: var(--links-color);
+}
+
+.footer .social-icons a:hover {
+    color: var(--nav-active-color);
+    transform: scale(1.2);
+}
+
+.footer small {
+    display: block;
+    margin-top: 15px;
+    color: var(--links-color);
 }
 
