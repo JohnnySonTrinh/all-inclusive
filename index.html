@@ -46,7 +46,7 @@
             Build Websites for
             <span class="text-decoration-underline">Everyone</span>
           </h1>
-          <p class="lead my-4">
+          <p class="lead my-4" id="textToRead">
             Accessibility isn't just a feature—it's a fundamental right. We're
             here to guide developers in creating digital experiences that are
             inclusive, usable, and empowering for all users, regardless of their
@@ -60,6 +60,22 @@
             >
               Core Concepts
             </a>
+            <!-- Existing Read Aloud Button for MP3 -->
+            <button
+              class="btn btn-secondary btn-lg"
+              id="readAloudButton"
+              aria-label="Read the content aloud from MP3 file"
+            >
+              Read Aloud (MP3)
+            </button>
+            <!-- New Read Aloud Button using Text-to-Speech -->
+            <button
+              class="btn btn-secondary btn-lg"
+              id="ttsButton"
+              aria-label="Read the content aloud using Text-to-Speech"
+            >
+              Read Aloud (TTS)
+            </button>
           </div>
         </div>
         <div class="col-lg-6 p-5">
@@ -317,5 +333,6 @@
     <script src="assets/scripts/themetoggle.js"></script>
     <script src="assets/scripts/font-toggle.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/read-aloud.js"></script>
   </body>
 </html>
