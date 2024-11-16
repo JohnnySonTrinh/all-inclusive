@@ -65,26 +65,32 @@ function loadNavbar() {
 
 // Function to load the Footer
 function loadFooter() {
-  const footerHtml = `
-      <footer class="footer text-white text-center py-4">
-          <div class="container">
-              <!-- Contact link -->
-              <a href="contact.html" class="link text-white me-3 text-decoration-none">
-                  <i class="fas fa-envelope"></i> Contact Us
-              </a>
-  
-              <!-- Social Media Links -->
-              <a href="https://www.facebook.com/" target="_blank" class="link text-white me-3 text-decoration-none">
-                  <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.linkedin.com/" target="_blank" class="link text-white me-3 text-decoration-none">
-                  <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank" class="link text-white text-decoration-none">
-                  <i class="fab fa-instagram"></i>
-              </a>
-          </div>
-      </footer>`;
+    const footerHtml = `
+    <footer class="footer">
+        <div class="container">
+            <!-- Contact link -->
+            <a href="contact.html" class="link text-decoration-none">
+                <i class="fas fa-envelope"></i> Contact Us
+            </a>
+
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <small>© ${new Date().getFullYear()} All-Inclusive. All Rights Reserved.</small>
+        </div>
+    </footer>
+`;
 
   document
     .getElementById("footer-placeholder")
@@ -95,4 +101,24 @@ function loadFooter() {
 document.addEventListener("DOMContentLoaded", function () {
   loadNavbar();
   loadFooter();
+});
+
+// This function closes the navbar menu when the user clicks outside of it
+document.addEventListener("click", function (event) {
+    const navbarCollapse = document.querySelector("#navbarNav");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+
+    const isNavbarOpen = navbarCollapse.classList.contains("show");
+
+    // Check if the click is outside the navbar and toggler button
+    if (
+        isNavbarOpen &&
+        !navbarCollapse.contains(event.target) &&
+        !navbarToggler.contains(event.target)
+    ) {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: true,
+        });
+        bsCollapse.hide();
+    }
 });
