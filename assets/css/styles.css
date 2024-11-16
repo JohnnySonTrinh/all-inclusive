@@ -1,15 +1,26 @@
 /* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+/* Define OpenDyslexic Font */
+@import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+
+/* Dyslexic Font Class */
+.dyslexic-font {
+    font-family: 'Open-Dyslexic', sans-serif;
+}
 /* root variables */
 :root {
     /* Accessible Color Palette */
     --primary-color: #1A5F7A;     /* Deep Blue */
-    --secondary-color: #20B2AA;   /* Teal */
+    --secondary-color: #10514E;   /* Teal */
     --background-color: #F5F5F5;  /* Soft White */
     --text-color: #333333;        /* Charcoal Gray */
     --accent-color: #FF7F50;      /* Warm Orange */
     --muted-color: #4f4e4e;
+    --links-color: #fff;
+    --nav-hover-color: #d6d5d5;      /* Accent color (Warm Orange) */
+    --nav-active-color: #f37a62;     /* Light Warm Peach for active state */
+    /* --navbar-color: #1A5F7A; */
     /* White/black color shades */
     --white-color: #fff;
     --black-color: #222;
@@ -23,6 +34,9 @@
     --text-color: #E0E0E0;        /* Light Gray */
     --accent-color: #FF6347;      /* Vibrant Red-Orange */
     --muted-color: #b3b2b2;
+    --links-color: #000;
+    --nav-hover-color: #373636;      /* Vibrant Red-Orange */
+    --nav-active-color: #f54623;     /* Pale Peach for active state */
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -44,7 +58,7 @@ body {
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: var(--white-color);
+    color: var(--links-color);
     border: 2px solid var(--primary-color);
 }
 
@@ -91,12 +105,120 @@ a:hover {
     background-color: var(--primary-color);
 }
 
+.navbar-toggler {
+    border: solid var(--links-color) !important;
+}
+
+.navbar-toggler-icon {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
+.nav-link {
+    color: var(--links-color);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--nav-hover-color);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    color: var(--nav-active-color) !important;
+    font-weight: bold;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--links-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+
 #theme-toggle {
-    color: var(--white-color);
-    font-size: 1.2rem;
+    color: var(--links-color);
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 #theme-toggle:hover {
     color: var(--accent-color);
 }
+
+#font-toggle {
+    color: var(--links-color);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#font-toggle:hover {
+    color: var(--accent-color);
+}
+
+.link {
+    color: var(--links-color) !important;
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color)!important;
+    max-width: 150px !important;
+    min-width: 120px !important;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 4px solid var(--accent-color);
+}
+
+.footer a {
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer a:hover {
+    color: var(--nav-active-color);
+    transform: translateY(-3px);
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: var(--links-color);
+}
+
+.footer .social-icons a:hover {
+    color: var(--nav-active-color);
+    transform: scale(1.2);
+}
+
+.footer small {
+    display: block;
+    margin-top: 15px;
+    color: var(--links-color);
+}
+
