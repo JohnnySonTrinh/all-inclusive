@@ -53,14 +53,6 @@
             abilities.
           </p>
           <div class="d-flex gap-3">
-            <a
-              href="core-concepts.html"
-              class="btn btn-primary btn-lg"
-              aria-label="Start Learning Accessibility"
-            >
-              Core Concepts
-            </a>
-            <!-- Existing Read Aloud Button for MP3 -->
             <button
               class="btn btn-secondary btn-lg"
               data-audio-id="build-websites-for-everyone"
@@ -68,6 +60,13 @@
             >
               Listen 🔊
             </button>
+            <a
+              href="core-concepts.html"
+              class="btn btn-primary btn-lg"
+              aria-label="Start Learning Accessibility"
+            >
+              Core Concepts
+            </a>
           </div>
         </div>
         <div class="col-lg-6 p-5">
@@ -165,20 +164,22 @@
           diverse needs of all users, making sure that everyone can participate
           equally in the digital world.
         </p>
-        <button
-          class="btn btn-primary btn-lg"
-          data-audio-id="accessibility-matters"
-          aria-label="Read the content"
-        >
-          Listen 🔊
-        </button>
-        <a
-          href="profiling.html"
-          class="btn btn-primary btn-lg"
-          aria-label="Start Learning Accessibility"
-        >
-          Learn More
-        </a>
+        <div class="d-flex gap-3">
+          <button
+            class="btn btn-secondary btn-lg"
+            data-audio-id="accessibility-matters"
+            aria-label="Read the content"
+          >
+            Listen 🔊
+          </button>
+          <a
+            href="profiling.html"
+            class="btn btn-primary btn-lg"
+            aria-label="Start Learning Accessibility"
+          >
+            Learn More
+          </a>
+        </div>
       </section>
 
       <!-- Key Focus Areas -->
@@ -263,14 +264,16 @@
                 </p>
               </li>
             </ul>
-            <button
-              class="btn btn-secondary mt-3"
-              data-audio-id="semantic-html"
-              aria-label="Read the content"
-            >
-              Listen 🔊
-            </button>
-            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+            <div class="d-flex gap-3">
+              <button
+                class="btn btn-secondary mt-3"
+                data-audio-id="semantic-html"
+                aria-label="Read the content"
+              >
+                Listen 🔊
+              </button>
+              <a href="#" class="btn btn-primary mt-3">Learn More</a>
+            </div>
           </div>
           <div class="col-md-6 order-md-1 p-5">
             <img
@@ -306,14 +309,16 @@
                 <p class="muted">Explains element roles and states</p>
               </li>
             </ul>
-            <button
-              class="btn btn-secondary mt-3"
-              data-audio-id="aria-attributes"
-              aria-label="Read the content"
-            >
-              Listen 🔊
-            </button>
-            <a href="#" class="btn btn-primary mt-3">Explore ARIA</a>
+            <div class="d-flex gap-3">
+              <button
+                class="btn btn-secondary mt-3"
+                data-audio-id="aria-attributes"
+                aria-label="Read the content"
+              >
+                Listen 🔊
+              </button>
+              <a href="#" class="btn btn-primary mt-3">Explore ARIA</a>
+            </div>
           </div>
           <div class="col-md-6 p-5">
             <img
@@ -345,14 +350,16 @@
                 <p class="muted">Ensures fair access to digital resources</p>
               </li>
             </ul>
-            <button
-              class="btn btn-secondary mt-3"
-              data-audio-id="inclusive-design"
-              aria-label="Read the content"
-            >
-              Listen 🔊
-            </button>
-            <a href="#" class="btn btn-primary mt-3">Design Principles</a>
+            <div class="d-flex gap-3">
+              <button
+                class="btn btn-secondary mt-3"
+                data-audio-id="inclusive-design"
+                aria-label="Read the content"
+              >
+                Listen 🔊
+              </button>
+              <a href="#" class="btn btn-primary mt-3">Design Principles</a>
+            </div>
           </div>
           <div class="col-md-6 order-md-1 p-5">
             <img
@@ -367,7 +374,6 @@
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-
     <!-- Load jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -378,7 +384,7 @@
     <script src="assets/scripts/themetoggle.js"></script>
     <script src="assets/scripts/font-toggle.js"></script>
     <script src="assets/scripts/main.js"></script>
-    <script src="assets/scripts/audioFiles.js"></script>
+    <script type="module" src="assets/scripts/audioFiles.js"></script>
     <script type="module" src="assets/scripts/readAudio.js"></script>
   </body>
 </html>
