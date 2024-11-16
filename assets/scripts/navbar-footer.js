@@ -39,7 +39,7 @@ function loadNavbar() {
                             currentPage === "/contact.html" ? "active" : ""
                           }" href="contact.html">Contact</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggle light mode / dark mode">
                           <a id="theme-toggle" href="#" class="nav-link">
                             <i id="theme-icon" class="fas fa-moon"></i>
                           </a>
