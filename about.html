@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact us for more information, support, and educational use of this site." />
+    <meta name="description"
+        content="About Us. Meet the Team Behind the All-Inclusive educational website for web accessibility" />
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <!--Add favicon-->
@@ -15,165 +16,187 @@
 </head>
 
 <body>
+    <!-- For keyboard-only users: A Hidden "skip to main content"-link -->
+    <a href="#about-us-content" class="visually-hidden-focusable">Skip to main content</a>
     <!-- NavBar -->
     <div id="navbar-placeholder"></div>
 
     <!-- Main Content -->
-    <main>
-        <!-- For keyboard-only users: A Hidden "skip to form"-link -->
-        <a href="#about-us-content" class="visually-hidden-focusable">Skip to main content</a>
-        <!-- Header -->
-        <header class="header">
-            <h1>About Us</h1>
-        </header>
+    <main class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
 
-        <!-- About Us Section -->
-        <section aria-label="About Our Team" id="about-us-content">
-            <div class="container mb-4">
+                <!-- Header -->
+                <header>
+                    <h1 class="display-4 fw-bold text-primary mb-5">
+                        About Us
+                    </h1>
+                </header>
 
-                <h2 class="text-center">Meet the All-Inclusive Team:</h2>
+                <!-- About Us Section -->
+                <section aria-labelledby="team-heading" id="about-us-content">
+                    <div class="container mb-4">
 
-                <ul class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 mt-4 list-unstyled">
-                    <!-- Team Member 1 -->
-                    <li>
-                        <article class="team-member">
-                            <div class="col-md-4">
-                                <img src="./assets/images/team-alina.webp" alt="Alina's profile picture"
-                                    class="img-fluid">
-                            </div>
-                            <h3>Alina Teodora Brinzac</h3>
-                            <h4>Scrum Master</h4>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="https://github.com/TeodoraAlina" target="_blank" rel="noopener"
-                                        aria-label="Visit Alina's GitHub page (opens in a new tab)">GitHub</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/alina-teodora-brinzac/" target="_blank"
-                                        rel="noopener"
-                                        aria-label="Visit Alina's LinkedIn page (opens in a new tab)">LinkedIn</a>
-                                </li>
-                            </ul>
-                            <p>...</p>
-                        </article>
-                    </li>
+                        <h2 id="team-heading" class="text-center mb-4">Meet the All-Inclusive Team:</h2>
 
-                    <!-- Team Member 2 -->
-                    <li>
-                        <article class="team-member">
-                            <div class="col-md-4">
-                                <img src="./assets/images/team-max.webp" class="img-fluid" alt="Max's profile picture">
-                            </div>
-                            <h3>Max 'D0bledore'</h3>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="https://github.com/d0bledore" target="_blank" rel="noopener"
-                                        aria-label="Visit Alina's GitHub page (opens in a new tab)">GitHub</a>
-                                </li>
-                            </ul>
-                            <p>"You can become rich, you can become strong, you can take care of your loved ones, and
-                                you
-                                can enjoy the fact that it will be very difficult to achieve."</p>
-                        </article>
-                    </li>
+                        <ul
+                            class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 list-unstyled justify-content-center">
+                            <!-- Team Member 1 -->
+                            <li class="col-12 col-md-8 col-lg-4>
+                                <article class=" card h-100 team-member">
+                                <div class="col">
+                                    <img src="./assets/images/team-alina.webp" alt="Alina's profile picture"
+                                        class="card-img-top team-member-image object-fit-cover">
+                                </div>
+                                <h3>Alina Teodora Brinzac</h3>
+                                <h4>Scrum Master</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/TeodoraAlina" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Alina's GitHub page (opens in a new tab)">GitHub</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/alina-teodora-brinzac/" target="_blank"
+                                            rel="noopener" class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Alina's LinkedIn page (opens in a new tab)">LinkedIn</a>
+                                    </li>
+                                </ul>
+                                <p>...</p>
+                                </article>
+                            </li>
 
-                    <!-- Team Member 3 -->
-                    <li>
-                        <article class="team-member">
-                            <div class="col-md-4">
-                                <img src="./assets/images/team-johnny.webp" class="img-fluid"
-                                    alt="Johnny's profile picture">
-                            </div>
-                            <h3>Johnny Trinh</h3>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="https://github.com/JohnnySonTrinh" target="_blank" rel="noopener"
-                                        aria-label="Visit Johnny's GitHub page (opens in a new tab)">GitHub</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://github.com/JohnnySonTrinh" target="_blank" rel="noopener"
-                                        aria-label="Visit Johnny's LinkedIn page (opens in a new tab)">LinkedIn</a>
-                                </li>
-                            </ul>
-                            <p>...</p>
-                        </article>
-                    </li>
+                            <!-- Team Member 2 -->
+                            <li class="col-12 col-md-8 col-lg-4>
+                                <article class=" card h-100 team-member">
+                                <div class="col">
+                                    <img src="./assets/images/team-max.webp"
+                                        class="card-img-top team-member-image object-fit-cover"
+                                        alt="Max's profile picture">
+                                </div>
+                                <h3>Max 'D0bledore'</h3>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/d0bledore" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Max's GitHub page (opens in a new tab)">GitHub</a>
+                                    </li>
+                                </ul>
+                                <p>"You can become rich, you can become strong, you can take care of your loved
+                                    ones, and
+                                    you
+                                    can enjoy the fact that it will be very difficult to achieve."</p>
+                                </article>
+                            </li>
 
-                    <!-- Team Member 4 -->
-                    <li>
-                        <article class="team-member">
-                            <div class="col-md-4">
-                                <img src="./assets/images/team-daisy.webp" class="img-fluid"
-                                    alt="Daisy's profile picture">
-                            </div>
-                            <h3>Daisy McGirr</h3>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="https://github.com/Dee-McG" target="_blank" rel="noopener"
-                                        aria-label="Visit Daisy's GitHub page (opens in a new tab)">GitHub</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/mcgirr-daisy/" target="_blank" rel="noopener"
-                                        aria-label="Visit Daisy's LinkedIn page (opens in a new tab)">LinkedIn</a>
-                                </li>
-                            </ul>
-                            <p>...</p>
-                        </article>
-                    </li>
+                            <!-- Team Member 3 -->
+                            <li class="col-12 col-md-8 col-lg-4>
+                                <article class=" card h-100 team-member">
+                                <div class="col">
+                                    <img src="./assets/images/team-johnny.webp"
+                                        class="card-img-top team-member-image object-fit-cover"
+                                        alt="Johnny's profile picture">
+                                </div>
+                                <h3>Johnny Trinh</h3>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/JohnnySonTrinh" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Johnny's GitHub page (opens in a new tab)">GitHub</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/JohnnySonTrinh" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Johnny's LinkedIn page (opens in a new tab)">LinkedIn</a>
+                                    </li>
+                                </ul>
+                                <p>...</p>
+                                </article>
+                            </li>
 
-
-                    <!-- Team Member 5 -->
-                    <li>
-                        <article class="team-member">
-                            <div class="col-md-4">
-                                <img src="./assets/images/team-kristian.webp" class="img-fluid"
-                                    alt="Kristian's profile picture">
-                            </div>
-                            <h3>Kristian Cross</h3>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="https://github.com/KC-85" target="_blank" rel="noopener"
-                                        aria-label="Visit Kristian's GitHub page (opens in a new tab)">GitHub</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="https://www.linkedin.com/in/kristian-cross-4976622b7/" target="_blank"
-                                        rel="noopener"
-                                        aria-label="Visit Kristian's LinkedIn page (opens in a new tab)">LinkedIn</a>
-                                </li>
-                            </ul>
-                            <p>"Simplicity overrides Complexity."</p>
-                        </article>
-                    </li>
-
-                    <!-- Team Member 6 -->
-                    <li>
-                        <article class="team-member">
-                            <div class="col-md-4">
-                                <img src="./assets/images/team-gudrun.webp" class="img-fluid"
-                                    alt="Gudrun's profile picture">
-                            </div>
-                            <h3>Gudrun Omarsdottir</h3>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <a href="http://github.com/g-omarsdottir" target="_blank" rel="noopener"
-                                        aria-label="Visit Gudrun's GitHub page (opens in a new tab)">GitHub</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="http://linkedin.com/in/gudrun-omarsdottir/" target="_blank" rel="noopener"
-                                        aria-label="Visit Gudrun's LinkedIn page (opens in a new tab)">LinkedIn</a>
-                                </li>
-                            </ul>
-                            <p>...</p>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                            <!-- Team Member 4 -->
+                            <li class="col-12 col-md-8 col-lg-4>
+                                <article class=" card h-100 team-member">
+                                <div class="col">
+                                    <img src="./assets/images/team-daisy.webp"
+                                        class="card-img-top team-member-image object-fit-cover"
+                                        alt="Daisy's profile picture">
+                                </div>
+                                <h3>Daisy McGirr</h3>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/Dee-McG" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Daisy's GitHub page (opens in a new tab)">GitHub</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/mcgirr-daisy/" target="_blank"
+                                            rel="noopener" class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Daisy's LinkedIn page (opens in a new tab)">LinkedIn</a>
+                                    </li>
+                                </ul>
+                                <p>...</p>
+                                </article>
+                            </li>
 
 
-        <!-- Footer -->
-        <div id="footer-placeholder"></div>
+                            <!-- Team Member 5 -->
+                            <li class="col-12 col-md-8 col-lg-4>
+                                <article class=" card h-100 team-member">
+                                <div class="col">
+                                    <img src="./assets/images/team-kristian.webp"
+                                        class="card-img-top team-member-image object-fit-cover"
+                                        alt="Kristian's profile picture">
+                                </div>
+                                <h3>Kristian Cross</h3>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/KC-85" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Kristian's GitHub page (opens in a new tab)">GitHub</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/kristian-cross-4976622b7/" target="_blank"
+                                            rel="noopener" class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Kristian's LinkedIn page (opens in a new tab)">LinkedIn</a>
+                                    </li>
+                                </ul>
+                                <p>"Simplicity overrides Complexity."</p>
+                                </article>
+                            </li>
+
+                            <!-- Team Member 6 -->
+                            <li class="col-12 col-md-8 col-lg-4>
+                                <article class=" card h-100 team-member">
+                                <div class="col">
+                                    <img src="./assets/images/team-gudrun.webp"
+                                        class="card-img-top team-member-image object-fit-cover"
+                                        alt="Gudrun's profile picture">
+                                </div>
+                                <h3>Gudrun Omarsdottir</h3>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="http://github.com/g-omarsdottir" target="_blank" rel="noopener"
+                                            class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Gudrun's GitHub page (opens in a new tab)">GitHub</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="http://linkedin.com/in/gudrun-omarsdottir/" target="_blank"
+                                            rel="noopener" class="btn btn-outline-primary btn-sm"
+                                            aria-label="Visit Gudrun's LinkedIn page (opens in a new tab)">LinkedIn</a>
+                                    </li>
+                                </ul>
+                                <p>...</p>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
     </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
 
     <!--Scripts-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
