@@ -39,13 +39,21 @@ function loadNavbar() {
                             currentPage === "/contact.html" ? "active" : ""
                           }" href="contact.html">Contact</a>
                       </li>
-                      <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggle light mode / dark mode">
-                          <a id="theme-toggle" href="#" class="nav-link">
-                            <i id="theme-icon" class="fas fa-moon"></i>
-                          </a>
-                       </li>
+                        <li class="nav-item dropdown-center">
+                            <a class="nav-link dropdown-toggle" href="#" id="settings-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Settings">
+                                <i class="fas fa-cog"></i>
+                                Settings
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="settings-toggle">
+                                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggle light mode / dark mode">
+                                    <a id="theme-toggle" href="#" class="nav-link">
+                                        <i id="theme-icon" class="fas fa-moon"></i>
+                                        Toggle Theme
+                                    </a>
+                                <li><a class="dropdown-item" href="#" id="font-toggle"><i class="fas fa-font"></i> Toggle Font</a></li>
+                            </ul>
+                        </li>    
                   </ul>
-                  <a id="font-toggle" href="#" class="nav-link">Toggle Dyslexic Font</a>
               </div>
           </div>
       </nav>`;
@@ -66,13 +74,13 @@ function loadFooter() {
               </a>
   
               <!-- Social Media Links -->
-              <a href="https://www.facebook.com/yourpage" target="_blank" class="link text-white me-3 text-decoration-none">
+              <a href="https://www.facebook.com/" target="_blank" class="link text-white me-3 text-decoration-none">
                   <i class="fab fa-facebook"></i>
               </a>
-              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="link text-white me-3 text-decoration-none">
+              <a href="https://www.linkedin.com/" target="_blank" class="link text-white me-3 text-decoration-none">
                   <i class="fab fa-linkedin"></i>
               </a>
-              <a href="https://www.instagram.com/yourprofile" target="_blank" class="link text-white text-decoration-none">
+              <a href="https://www.instagram.com/" target="_blank" class="link text-white text-decoration-none">
                   <i class="fab fa-instagram"></i>
               </a>
           </div>
