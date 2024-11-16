@@ -46,7 +46,7 @@
             Build Websites for
             <span class="text-decoration-underline">Everyone</span>
           </h1>
-          <p class="lead my-4" id="textToRead">
+          <p class="lead my-4">
             Accessibility isn't just a feature—it's a fundamental right. We're
             here to guide developers in creating digital experiences that are
             inclusive, usable, and empowering for all users, regardless of their
@@ -63,18 +63,10 @@
             <!-- Existing Read Aloud Button for MP3 -->
             <button
               class="btn btn-secondary btn-lg"
-              id="readAloudButton"
-              aria-label="Read the content aloud from MP3 file"
+              data-audio-id="build-websites-for-everyone"
+              aria-label="Read the content"
             >
-              Read Aloud (MP3)
-            </button>
-            <!-- New Read Aloud Button using Text-to-Speech -->
-            <button
-              class="btn btn-secondary btn-lg"
-              id="ttsButton"
-              aria-label="Read the content aloud using Text-to-Speech"
-            >
-              Read Aloud (TTS)
+              Listen 🔊
             </button>
           </div>
         </div>
@@ -101,6 +93,13 @@
                   impaired, with 39 million experiencing blindness and 246
                   million having low vision
                 </p>
+                <button
+                  class="btn btn-secondary btn-lg"
+                  data-audio-id="vision-crisis"
+                  aria-label="Read the content"
+                >
+                  Listen 🔊
+                </button>
               </div>
             </div>
           </div>
@@ -115,6 +114,13 @@
                   disability that affects their use of the internet, emphasizing
                   the need for accessible web design
                 </p>
+                <button
+                  class="btn btn-secondary btn-lg"
+                  data-audio-id="accessibility-necessity"
+                  aria-label="Read the content"
+                >
+                  Listen 🔊
+                </button>
               </div>
             </div>
           </div>
@@ -129,6 +135,13 @@
                   U.S. related to website accessibility issues under the
                   Americans with Disabilities Act
                 </p>
+                <button
+                  class="btn btn-secondary btn-lg"
+                  data-audio-id="compliance-demand"
+                  aria-label="Read the content"
+                >
+                  Listen 🔊
+                </button>
               </div>
             </div>
           </div>
@@ -152,6 +165,13 @@
           diverse needs of all users, making sure that everyone can participate
           equally in the digital world.
         </p>
+        <button
+          class="btn btn-primary btn-lg"
+          data-audio-id="accessibility-matters"
+          aria-label="Read the content"
+        >
+          Listen 🔊
+        </button>
         <a
           href="profiling.html"
           class="btn btn-primary btn-lg"
@@ -243,6 +263,13 @@
                 </p>
               </li>
             </ul>
+            <button
+              class="btn btn-secondary mt-3"
+              data-audio-id="semantic-html"
+              aria-label="Read the content"
+            >
+              Listen 🔊
+            </button>
             <a href="#" class="btn btn-primary mt-3">Learn More</a>
           </div>
           <div class="col-md-6 order-md-1 p-5">
@@ -279,6 +306,13 @@
                 <p class="muted">Explains element roles and states</p>
               </li>
             </ul>
+            <button
+              class="btn btn-secondary mt-3"
+              data-audio-id="aria-attributes"
+              aria-label="Read the content"
+            >
+              Listen 🔊
+            </button>
             <a href="#" class="btn btn-primary mt-3">Explore ARIA</a>
           </div>
           <div class="col-md-6 p-5">
@@ -311,6 +345,13 @@
                 <p class="muted">Ensures fair access to digital resources</p>
               </li>
             </ul>
+            <button
+              class="btn btn-secondary mt-3"
+              data-audio-id="inclusive-design"
+              aria-label="Read the content"
+            >
+              Listen 🔊
+            </button>
             <a href="#" class="btn btn-primary mt-3">Design Principles</a>
           </div>
           <div class="col-md-6 order-md-1 p-5">
@@ -333,6 +374,7 @@
     <script src="assets/scripts/themetoggle.js"></script>
     <script src="assets/scripts/font-toggle.js"></script>
     <script src="assets/scripts/main.js"></script>
-    <script src="assets/scripts/read-aloud.js"></script>
+    <script src="assets/scripts/audioFiles.js"></script>
+    <script type="module" src="assets/scripts/readAudio.js"></script>
   </body>
 </html>
