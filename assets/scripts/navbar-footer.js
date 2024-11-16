@@ -40,10 +40,10 @@ function loadNavbar() {
                           }" href="contact.html">Contact</a>
                       </li>
                         <li class="nav-item dropdown-center">
-                            <a class="nav-link dropdown-toggle" href="#" id="settings-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Settings">
+                            <button class="nav-link dropdown-toggle" id="settings-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Settings">
                                 <i class="fas fa-cog"></i>
                                 Settings
-                            </a>
+                            </button>
                             <ul class="dropdown-menu" aria-labelledby="settings-toggle">
                                 <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggles colour scheme between light mode and dark mode">
                                     <a id="theme-toggle" href="#" class="nav-link">
