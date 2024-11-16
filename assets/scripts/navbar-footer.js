@@ -45,12 +45,14 @@ function loadNavbar() {
                                 Settings
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="settings-toggle">
-                                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggle light mode / dark mode">
+                                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggles colour scheme between light mode and dark mode">
                                     <a id="theme-toggle" href="#" class="nav-link">
                                         <i id="theme-icon" class="fas fa-moon"></i>
                                         Toggle Theme
                                     </a>
-                                <li class="nav-item"><a href="#" id="font-toggle" class="nav-link"><i class="fas fa-font"></i> Toggle Font</a></li>
+                                <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Toggles font to a dyslexic friendly font">
+                                    <a href="#" id="font-toggle" class="nav-link"><i class="fas fa-font"></i> Toggle Font</a>
+                                </li>
                             </ul>
                         </li>    
                   </ul>
@@ -65,7 +67,7 @@ function loadNavbar() {
 
 // Function to load the Footer
 function loadFooter() {
-    const footerHtml = `
+  const footerHtml = `
     <footer class="footer">
         <div class="container">
             <!-- Contact link -->
@@ -105,20 +107,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // This function closes the navbar menu when the user clicks outside of it
 document.addEventListener("click", function (event) {
-    const navbarCollapse = document.querySelector("#navbarNav");
-    const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector("#navbarNav");
+  const navbarToggler = document.querySelector(".navbar-toggler");
 
-    const isNavbarOpen = navbarCollapse.classList.contains("show");
+  const isNavbarOpen = navbarCollapse.classList.contains("show");
 
-    // Check if the click is outside the navbar and toggler button
-    if (
-        isNavbarOpen &&
-        !navbarCollapse.contains(event.target) &&
-        !navbarToggler.contains(event.target)
-    ) {
-        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-            toggle: true,
-        });
-        bsCollapse.hide();
-    }
+  // Check if the click is outside the navbar and toggler button
+  if (
+    isNavbarOpen &&
+    !navbarCollapse.contains(event.target) &&
+    !navbarToggler.contains(event.target)
+  ) {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: true,
+    });
+    bsCollapse.hide();
+  }
 });
