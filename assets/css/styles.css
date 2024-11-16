@@ -20,8 +20,6 @@
     --links-color: #fff;
     --nav-hover-color: #d6d5d5;
     --nav-active-color: #FFE6BD;
-
-    /* --navbar-color: #1A5F7A; */
     /* White/black color shades */
     --white-color: #fff;
     --black-color: #222;
@@ -36,8 +34,8 @@
     --accent-color: #FF6347;      /* Vibrant Red-Orange */
     --muted-color: #b3b2b2;
     --links-color: #000;
-    --nav-hover-color: #373636;      /* Vibrant Red-Orange */
-    --nav-active-color: #690000;     /* Pale Peach for active state */
+    --nav-hover-color: #373636;
+    --nav-active-color: #690000;
     --white-color: #FFFFFF;
     --black-color: #000000;
 }
@@ -226,3 +224,9 @@ a:hover {
     color: var(--links-color);
 }
 
+.tooltip-inner {
+    background-color: var(--primary-color) !important;
+    color: var(--links-color);
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 10px var(--black-color);
+}
