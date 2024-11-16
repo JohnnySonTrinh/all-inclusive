@@ -27,8 +27,17 @@ function onContactButtonClick() {
     window.location.href = rootUrl + '/contact.html';
 }
 
-document.getElementById('home-btn').addEventListener('click', onHomeButtonClick);
-document.getElementById('services-btn').addEventListener('click', onServicesButtonClick);
-document.getElementById('demo-btn').addEventListener('click', onDemoButtonClick);
-document.getElementById('about-btn').addEventListener('click', onAboutButtonClick);
-document.getElementById('contact-btn').addEventListener('click', onContactButtonClick);
+// Ensure DOM is loaded before adding event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    const homeBtn = document.getElementById('home-btn');
+    const servicesBtn = document.getElementById('services-btn');
+    const demoBtn = document.getElementById('demo-btn');
+    const aboutBtn = document.getElementById('about-btn');
+    const contactBtn = document.getElementById('contact-btn');
+
+    if (homeBtn) homeBtn.addEventListener('click', onHomeButtonClick);
+    if (servicesBtn) servicesBtn.addEventListener('click', onServicesButtonClick);
+    if (demoBtn) demoBtn.addEventListener('click', onDemoButtonClick);
+    if (aboutBtn) aboutBtn.addEventListener('click', onAboutButtonClick);
+    if (contactBtn) contactBtn.addEventListener('click', onContactButtonClick);
+});
