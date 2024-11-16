@@ -1,5 +1,5 @@
 function loadNavbar() {
-  const currentPage = window.location.pathname;
+    const currentPage = window.location.pathname.split('/').pop();
 
   const navbarHtml = `
       <nav class="navbar navbar-expand-lg navbar-dark">
