@@ -51,6 +51,18 @@ const audioFiles = [
     id: "alexandra-olivia",
     audioPath: "assets/tts/alexandra-olivia.mp3",
   },
+  {
+    id: "mobile-touch-accessibility",
+    audioPath: "assets/tts/mobile-touch-accessibility.mp3",
+  },
+  {
+    id: "focus-states",
+    audioPath: "assets/tts/focus-states.mp3",
+  },
+  {
+    id: "skip-links",
+    audioPath: "assets/tts/skip-links.mp3",
+  },
 ];
 
 export default audioFiles;
