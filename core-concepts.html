@@ -82,22 +82,10 @@
               <div class="card-body">
                 <h2 class="card-title h4">Mobile and Touch Accessibility</h2>
                 <p class="card-text">
-                  Ensure your interfaces are optimized for touch interactions
-                  by using responsive design, larger touch targets, and
-                  avoiding hover-only interactions.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Keyboard Navigation</h2>
-                <p class="card-text">
-                  Make your site fully navigable using a keyboard. Focus
-                  should follow logical sequences, and interactive elements
-                  should be accessible using the <kbd>Tab</kbd> key.
+                  Optimize for all devices with orientation flexibility and no horizontal scrolling. Ensure buttons and
+                  icons are easily tappable with sufficient spacing between interactive elements.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/orientation.html" target="_blank">Learn about orientation
+                    requirements</a>.
                 </p>
               </div>
             </div>
@@ -108,9 +96,10 @@
               <div class="card-body">
                 <h2 class="card-title h4">Focus States</h2>
                 <p class="card-text">
-                  Use visible focus indicators to help users understand their
-                  current position on the page. Avoid removing default focus
-                  outlines unless replaced with custom styles.
+                  Design clear visual focus indicators with high contrast to help users track their location. Never
+                  remove focus indicators without replacement.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html" target="_blank">Learn about focus
+                    visibility</a>.
                 </p>
               </div>
             </div>
@@ -121,9 +110,8 @@
               <div class="card-body">
                 <h2 class="card-title h4">Skip Links</h2>
                 <p class="card-text">
-                  Provide skip links to allow users to bypass repetitive
-                  content and navigate directly to main sections, such as the
-                  primary content area or navigation menu.
+                  Implement skip links as the first interactive element, allowing users to bypass repetitive content.
+                  These should be hidden until focused.
                 </p>
               </div>
             </div>
@@ -142,12 +130,35 @@
               </div>
             </div>
           </article>
+
+          <article class="col-md-4 mt-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title h4">Focus Control</h2>
+                <p class="card-text">
+                  Avoid unexpected focus shifts and use autofocus sparingly. Consider diverse user needs when
+                  implementing focus management.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-4 mt-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title h4">Links</h2>
+                <p class="card-text">
+                  Always include href attributes, make links recognizable with underlines, and maintain consistent
+                  styling. Don't rely on color alone.
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Visual Accessibility -->
-      <section class="tab-pane fade" id="visual-accessibility" role="tabpanel"
-        aria-labelledby="visual-accessibility-tab">
+      <!-- Visual Accessibility Tab -->
+      <section class="tab-pane fade" id="visual-accessibility" role="tabpanel">
         <header>
           <h2 class="visually-hidden">Visual Accessibility</h2>
         </header>
@@ -157,9 +168,9 @@
               <div class="card-body">
                 <h2 class="card-title h4">Appearance</h2>
                 <p class="card-text">
-                  Ensure good contrast ratios, use readable font sizes, and
-                  avoid overly stylized fonts. Ensure text is legible for all
-                  users.
+                  Test content in specialized modes like High Contrast. Ensure good spacing and avoid conveying
+                  information by color alone.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html" target="_blank">Learn about color use</a>.
                 </p>
               </div>
             </div>
@@ -170,9 +181,8 @@
               <div class="card-body">
                 <h2 class="card-title h4">Specialized Browsing Modes</h2>
                 <p class="card-text">
-                  Support high-contrast modes, dark themes, and other visual
-                  aids that enhance user experience for visually impaired
-                  users.
+                  Verify content remains legible in high contrast and inverted color modes. Ensure icons and form fields
+                  are clear against backgrounds.
                 </p>
               </div>
             </div>
@@ -181,36 +191,10 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Resize Text</h2>
+                <h2 class="card-title h4">Text Resizing</h2>
                 <p class="card-text">
-                  Allow users to resize text without breaking the layout,
-                  ensuring that the site remains functional at 200% zoom or
-                  more.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Headings</h2>
-                <p class="card-text">
-                  Use proper heading hierarchy (e.g.,
-                  <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) to make
-                  content easy to scan and navigate.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Alt Text Guidelines</h2>
-                <p class="card-text">
-                  Provide meaningful alt text for images, ensuring that the
-                  description conveys the purpose of the image succinctly.
+                  Test content at 200% zoom to ensure readability without overlap. Maintain clarity when text is
+                  enlarged.
                 </p>
               </div>
             </div>
@@ -219,7 +203,7 @@
       </section>
 
       <!-- Media & Interaction -->
-      <section class="tab-pane fade" id="media-interaction" role="tabpanel" aria-labelledby="media-interaction-tab">
+      <section class="tab-pane fade" id="media-interaction" role="tabpanel">
         <header>
           <h2 class="visually-hidden">Media & Interaction</h2>
         </header>
@@ -227,10 +211,12 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Animation Accessibility</h2>
+                <h2 class="card-title h4">Animation Control</h2>
                 <p class="card-text">
-                  Avoid overly complex animations, and respect user
-                  preferences by supporting the "reduce motion" setting.
+                  Limit flashing content and respect prefers-reduced-motion settings. Ensure animations are subtle to
+                  prevent triggering seizures.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html" target="_blank">Learn about
+                    animation guidelines</a>.
                 </p>
               </div>
             </div>
@@ -239,10 +225,12 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Audio Accessibility</h2>
+                <h2 class="card-title h4">Audio Controls</h2>
                 <p class="card-text">
-                  Provide controls to pause or adjust volume, and ensure audio
-                  content doesn't play automatically.
+                  Never autoplay audio without user consent. Provide clear controls for volume adjustment and
+                  transcripts for all audio content.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html" target="_blank">Learn about audio
+                    controls</a>.
                 </p>
               </div>
             </div>
@@ -251,10 +239,12 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Video Accessibility</h2>
+                <h2 class="card-title h4">Video Content</h2>
                 <p class="card-text">
-                  Include captions, transcripts, and descriptive audio for
-                  videos to make them accessible to all users.
+                  Include captions and descriptive transcripts for all videos. Remove any strobing effects that could
+                  trigger seizures.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html" target="_blank">Learn about video
+                    accessibility</a>.
                 </p>
               </div>
             </div>
@@ -265,20 +255,8 @@
               <div class="card-body">
                 <h2 class="card-title h4">Media Controls</h2>
                 <p class="card-text">
-                  Offer intuitive controls for media, such as play, pause, and
-                  seek buttons, and ensure they are keyboard-accessible.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Error Messaging</h2>
-                <p class="card-text">
-                  Ensure error messages are clear, concise, and visually
-                  distinct. Provide guidance for resolving errors effectively.
+                  Provide keyboard-accessible controls for all media. Include a global pause function using the Space
+                  key without disrupting page scrolling.
                 </p>
               </div>
             </div>
@@ -287,7 +265,7 @@
       </section>
 
       <!-- Form Accessibility -->
-      <section class="tab-pane fade" id="form-accessibility" role="tabpanel" aria-labelledby="form-accessibility-tab">
+      <section class="tab-pane fade" id="form-accessibility" role="tabpanel">
         <header>
           <h2 class="visually-hidden">Form Accessibility</h2>
         </header>
@@ -297,9 +275,10 @@
               <div class="card-body">
                 <h2 class="card-title h4">Form Inputs</h2>
                 <p class="card-text">
-                  Use proper input types (e.g., <code>email</code>,
-                  <code>tel</code>), and ensure labels are associated with
-                  their inputs using <code>for</code> and <code>id</code>.
+                  Use proper input types and ensure labels are properly associated. Enable autocomplete for common
+                  fields like name and address.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html" target="_blank">Learn about input
+                    purpose</a>.
                 </p>
               </div>
             </div>
@@ -308,11 +287,12 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Form Grouping</h2>
+                <h2 class="card-title h4">Form Groups</h2>
                 <p class="card-text">
-                  Group related fields using <code>&lt;fieldset&gt;</code> and
-                  provide a <code>&lt;legend&gt;</code> to explain the purpose
-                  of the group.
+                  Group related fields using fieldset and legend elements. Keep descriptions concise and
+                  informative.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html" target="_blank">Learn about form
+                    relationships</a>.
                 </p>
               </div>
             </div>
@@ -321,23 +301,11 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Autocomplete</h2>
+                <h2 class="card-title h4">Error Handling</h2>
                 <p class="card-text">
-                  Implement autocomplete attributes for inputs to streamline
-                  data entry and improve user experience.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Input Validation</h2>
-                <p class="card-text">
-                  Provide real-time validation feedback and use ARIA
-                  attributes, such as <code>aria-invalid</code>, to improve
-                  accessibility.
+                  Provide clear error messages using aria-describedby. Use aria-invalid to indicate error states.
+                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html" target="_blank">Learn about error
+                    messaging</a>.
                 </p>
               </div>
             </div>
@@ -346,7 +314,7 @@
       </section>
 
       <!-- Content Structure -->
-      <section class="tab-pane fade" id="content-structure" role="tabpanel" aria-labelledby="content-structure-tab">
+      <section class="tab-pane fade" id="content-structure" role="tabpanel">
         <header>
           <h2 class="visually-hidden">Content Structure</h2>
         </header>
@@ -354,10 +322,25 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
+                <h2 class="card-title h4">HTML Validation</h2>
+                <p class="card-text">
+                  Ensure valid HTML for consistent experience across browsers and assistive technologies. Use the lang
+                  attribute in the html element.
+                  <a href="https://validator.w3.org/nu/" target="_blank">Validate your HTML</a>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-4 mt-4">
+            <div class="card h-100">
+              <div class="card-body">
                 <h2 class="card-title h4">Page Titles</h2>
                 <p class="card-text">
-                  Provide descriptive and unique titles for each page to help
-                  users and search engines understand the content.
+                  Create unique, descriptive titles for each page to guide users instantly and enhance navigation with
+                  many open tabs.
+                  <a href="https://www.a11yproject.com/checklist/#provide-a-unique-title-for-each-page-or-view" target="_blank">Learn
+                    about page titles</a>.
                 </p>
               </div>
             </div>
@@ -368,9 +351,8 @@
               <div class="card-body">
                 <h2 class="card-title h4">Linear Flow</h2>
                 <p class="card-text">
-                  Ensure a logical reading order that supports linear
-                  navigation, especially for users relying on assistive
-                  technology.
+                  Remove unnecessary tabindex values and let focusable elements shine naturally. Reserve tabindex="0"
+                  and "-1" for special cases.
                 </p>
               </div>
             </div>
@@ -381,8 +363,8 @@
               <div class="card-body">
                 <h2 class="card-title h4">Logical Flow</h2>
                 <p class="card-text">
-                  Organize content logically to reduce cognitive load,
-                  grouping related information and using headings effectively.
+                  Match focus order with visual layout and ensure seamless movement from top to bottom without
+                  unexpected jumps.
                 </p>
               </div>
             </div>
@@ -391,11 +373,23 @@
           <article class="col-md-4 mt-4">
             <div class="card h-100">
               <div class="card-body">
-                <h2 class="card-title h4">Tables and Tabular Data</h2>
+                <h2 class="card-title h4">Accessibility Validation</h2>
                 <p class="card-text">
-                  Use semantic table elements (<code>&lt;table&gt;</code>,
-                  <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>) and
-                  provide meaningful summaries and captions.
+                  Use WAVE tool for identifying accessibility issues and ensuring content usability across different
+                  devices and environments.
+                  <a href="https://wave.webaim.org/" target="_blank">Test your accessibility</a>.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-4 mt-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title h4">Heading Structure</h2>
+                <p class="card-text">
+                  Use proper heading hierarchy (h1-h6) to break content into logical chunks. Ensure one unique h1 per
+                  page that reflects specific content.
                 </p>
               </div>
             </div>
