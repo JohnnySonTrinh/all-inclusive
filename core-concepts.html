@@ -1,434 +1,691 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add description -->
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Add description -->
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/core-concepts.css" />
+    <!-- Core Concepts Title -->
+    <title>Core Concepts</title>
+  </head>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/core-concepts.css" />
-  <!-- Core Concepts Title -->
-  <title>Core Concepts</title>
-</head>
+  <body>
+    <!-- NavBar -->
+    <div id="navbar-placeholder"></div>
+    <!-- Main Content -->
 
-<body>
-  <!-- NavBar -->
-  <div id="navbar-placeholder"></div>
-  <!-- Main Content -->
-
-  <main class="container my-5">
-    <div class="row align-items-center mb-5">
-      <h1 class="display-4 fw-bold text-primary text-center">
-        Core Concepts
-      </h1>
-      <p class="lead my-4 text-center">
-        Explore Accessibility and Inclusive Design Principles
-      </p>
-    </div>
-    <!-- Tabs Navigation -->
-    <ul class="nav nav-tabs d-flex flex-column flex-md-row justify-content-center" id="coreConceptsTabs" role="tablist">
-      <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Use the arrow keys to navigate on the tabs" role="presentation">
-        <button class="nav-link active tab w-100 w-md-auto" id="device-navigation-tab" data-bs-toggle="tab"
-          data-bs-target="#device-navigation" type="button" role="tab" aria-controls="device-navigation"
-          aria-selected="true">
-          Device & Navigation
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link tab w-100 w-md-auto" id="appearance-tab" data-bs-toggle="tab"
-          data-bs-target="#appearance" type="button" role="tab" aria-controls="appearance"
-          aria-selected="false">
-          Appearance
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link tab w-100 w-md-auto" id="media-interaction-tab" data-bs-toggle="tab" data-bs-target="#media-interaction"
-          type="button" role="tab" aria-controls="media-interaction" aria-selected="false">
-          Media & Interaction
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link tab w-100 w-md-auto" id="forms-and-tables-tab" data-bs-toggle="tab"
-          data-bs-target="#forms-and-tables" type="button" role="tab" aria-controls="forms-and-tables"
-          aria-selected="false">
-          Forms & Tables
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link tab w-100 w-md-auto" id="content-structure-tab" data-bs-toggle="tab" data-bs-target="#content-structure"
-          type="button" role="tab" aria-controls="content-structure" aria-selected="false">
-          Content Structure
-        </button>
-      </li>
-    </ul>
-
-
-    <!-- Tabs Content -->
-    <section class="tab-content mt-4" id="coreConceptsTabsContent">
-      <!-- Device & Navigation -->
-      <section class="tab-pane fade show active" id="device-navigation" role="tabpanel"
-        aria-labelledby="device-navigation-tab">
-        <header>
-          <h2 class="visually-hidden">Device & Navigation</h2>
-        </header>
-        <div class="row">
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Mobile and Touch Accessibility</h2>
-                <p class="card-text">
-                  Optimize for all devices with orientation flexibility and no horizontal scrolling. Ensure buttons and
-                  icons are easily tappable with sufficient spacing between interactive elements.
-                  <a class="learn-link" href="https://www.w3.org/WAI/WCAG22/Understanding/orientation.html" target="_blank">Learn about
-                    orientation
-                    requirements</a>.
-                </p>
+    <main class="container my-5">
+      <div class="row align-items-center mb-5">
+        <h1 class="display-4 fw-bold text-primary text-center">
+          Core Concepts
+        </h1>
+        <p class="lead my-4 text-center">
+          Explore Accessibility and Inclusive Design Principles
+        </p>
+      </div>
+      <!-- Tabs Navigation -->
+      <ul
+        class="nav nav-tabs d-flex flex-column flex-md-row justify-content-center"
+        id="coreConceptsTabs"
+        role="tablist"
+      >
+        <li
+          class="nav-item"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Use the arrow keys to navigate on the tabs"
+          role="presentation"
+        >
+          <button
+            class="nav-link active tab w-100 w-md-auto"
+            id="device-navigation-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#device-navigation"
+            type="button"
+            role="tab"
+            aria-controls="device-navigation"
+            aria-selected="true"
+          >
+            Device & Navigation
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link tab w-100 w-md-auto"
+            id="appearance-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#appearance"
+            type="button"
+            role="tab"
+            aria-controls="appearance"
+            aria-selected="false"
+          >
+            Appearance
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link tab w-100 w-md-auto"
+            id="media-interaction-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#media-interaction"
+            type="button"
+            role="tab"
+            aria-controls="media-interaction"
+            aria-selected="false"
+          >
+            Media & Interaction
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link tab w-100 w-md-auto"
+            id="forms-and-tables-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#forms-and-tables"
+            type="button"
+            role="tab"
+            aria-controls="forms-and-tables"
+            aria-selected="false"
+          >
+            Forms & Tables
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link tab w-100 w-md-auto"
+            id="content-structure-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#content-structure"
+            type="button"
+            role="tab"
+            aria-controls="content-structure"
+            aria-selected="false"
+          >
+            Content Structure
+          </button>
+        </li>
+      </ul>
+      
+      <!-- Tabs Content -->
+      <section class="tab-content mt-4" id="coreConceptsTabsContent">
+        <!-- Device & Navigation -->
+        <section
+          class="tab-pane fade show active"
+          id="device-navigation"
+          role="tabpanel"
+          aria-labelledby="device-navigation-tab"
+        >
+          <header>
+            <h2 class="visually-hidden">Device & Navigation</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Mobile and Touch Accessibility</h2>
+                  <p class="card-text">
+                    Optimize for all devices with orientation flexibility and no
+                    horizontal scrolling. Ensure buttons and icons are easily
+                    tappable with sufficient spacing between interactive
+                    elements.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/orientation.html"
+                      class="learn-link" target="_blank"
+                      >Learn about orientation requirements</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id="mobile-touch-accessibility"
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
               </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Focus States</h2>
-                <p class="card-text">
-                  Design clear visual focus indicators with high contrast to help users track their location. Never
-                  remove focus indicators without replacement.
-                  <a class="learn-link" href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html" target="_blank">Learn about
-                    focus
-                    visibility</a>.
-                </p>
+            </article>
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Focus States</h2>
+                  <p class="card-text">
+                    Design clear visual focus indicators with high contrast to
+                    help users track their location. Never remove focus
+                    indicators without replacement.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html"
+                      class="learn-link" target="_blank"
+                      >Learn about focus visibility</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id="focus-states"
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Skip Links</h2>
-                <p class="card-text">
-                  Implement skip links as the first interactive element, allowing users to bypass repetitive content.
-                  These should be hidden until focused.
-                </p>
-              </div>
-            </div>
-          </article>
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Skip Links</h2>
+                  <p class="card-text">
+                    Implement skip links as the first interactive element,
+                    allowing users to bypass repetitive content. These should be
+                    hidden until focused.
+                  </p>
 
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Landmarks</h2>
-                <p class="card-text">
-                  Use ARIA landmarks or semantic HTML elements, such as
-                  <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and
-                  <code>&lt;footer&gt;</code>, to help assistive technologies
-                  navigate your site.
-                </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id="skip-links"
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Focus Control</h2>
-                <p class="card-text">
-                  Avoid unexpected focus shifts and use autofocus sparingly. Consider diverse user needs when
-                  implementing focus management.
-                </p>
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Landmarks</h2>
+                  <p class="card-text">
+                    Use ARIA landmarks or semantic HTML elements, such as
+                    <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and
+                    <code>&lt;footer&gt;</code>, to help assistive technologies
+                    navigate your site.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Links</h2>
-                <p class="card-text">
-                  Always include href attributes, make links recognizable with underlines, and maintain consistent
-                  styling. Don't rely on color alone.
-                </p>
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Focus Control</h2>
+                  <p class="card-text">
+                    Avoid unexpected focus shifts and use autofocus sparingly.
+                    Consider diverse user needs when implementing focus
+                    management.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Links</h2>
+                  <p class="card-text">
+                    Always include href attributes, make links recognizable with
+                    underlines, and maintain consistent styling. Don't rely on
+                    color alone.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Appearance Tab -->
+        <section class="tab-pane fade" id="appearance" role="tabpanel">
+          <header>
+            <h2 class="visually-hidden">Appearance</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Appearance</h2>
+                  <p class="card-text">
+                    Test content in specialized modes like High Contrast. Ensure
+                    good spacing and avoid conveying information by color alone.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+                      target="_blank"
+                      >Learn about color use</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Specialized Browsing Modes</h2>
+                  <p class="card-text">
+                    Verify content remains legible in high contrast and inverted
+                    color modes. Ensure icons and form fields are clear against
+                    backgrounds.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Text Resizing</h2>
+                  <p class="card-text">
+                    Test content at 200% zoom to ensure readability without
+                    overlap. Maintain clarity when text is enlarged.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Media & Interaction -->
+        <section class="tab-pane fade" id="media-interaction" role="tabpanel">
+          <header>
+            <h2 class="visually-hidden">Media & Interaction</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Animation Control</h2>
+                  <p class="card-text">
+                    Limit flashing content and respect prefers-reduced-motion
+                    settings. Ensure animations are subtle to prevent triggering
+                    seizures.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html"
+                      target="_blank"
+                      >Learn about animation guidelines</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Audio Controls</h2>
+                  <p class="card-text">
+                    Never autoplay audio without user consent. Provide clear
+                    controls for volume adjustment and transcripts for all audio
+                    content.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html"
+                      target="_blank"
+                      >Learn about audio controls</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Video Content</h2>
+                  <p class="card-text">
+                    Include captions and descriptive transcripts for all videos.
+                    Remove any strobing effects that could trigger seizures.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html"
+                      target="_blank"
+                      >Learn about video accessibility</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Media Controls</h2>
+                  <p class="card-text">
+                    Provide keyboard-accessible controls for all media. Include
+                    a global pause function using the Space key without
+                    disrupting page scrolling.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Forms & Tables -->
+        <section class="tab-pane fade" id="forms-and-tables" role="tabpanel">
+          <header>
+            <h2 class="visually-hidden">Forms & Tables</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Form Inputs</h2>
+                  <p class="card-text">
+                    Use proper input types and ensure labels are properly
+                    associated. Enable autocomplete for common fields like name
+                    and address.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html"
+                      target="_blank"
+                      >Learn about input purpose</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Form Groups</h2>
+                  <p class="card-text">
+                    Group related fields using fieldset and legend elements.
+                    Keep descriptions concise and informative.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html"
+                      target="_blank"
+                      >Learn about form relationships</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Error Handling</h2>
+                  <p class="card-text">
+                    Provide clear error messages using aria-describedby. Use
+                    aria-invalid to indicate error states.
+                    <a
+                      href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html"
+                      target="_blank"
+                      >Learn about error messaging</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Content Structure -->
+        <section class="tab-pane fade" id="content-structure" role="tabpanel">
+          <header>
+            <h2 class="visually-hidden">Content Structure</h2>
+          </header>
+          <div class="row">
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">HTML Validation</h2>
+                  <p class="card-text">
+                    Ensure valid HTML for consistent experience across browsers
+                    and assistive technologies. Use the lang attribute in the
+                    html element.
+                    <a href="https://validator.w3.org/nu/" target="_blank"
+                      >Validate your HTML</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Page Titles</h2>
+                  <p class="card-text">
+                    Create unique, descriptive titles for each page to guide
+                    users instantly and enhance navigation with many open tabs.
+                    <a
+                      href="https://www.a11yproject.com/checklist/#provide-a-unique-title-for-each-page-or-view"
+                      target="_blank"
+                      >Learn about page titles</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Linear Flow</h2>
+                  <p class="card-text">
+                    Remove unnecessary tabindex values and let focusable
+                    elements shine naturally. Reserve tabindex="0" and "-1" for
+                    special cases.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Logical Flow</h2>
+                  <p class="card-text">
+                    Match focus order with visual layout and ensure seamless
+                    movement from top to bottom without unexpected jumps.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Accessibility Validation</h2>
+                  <p class="card-text">
+                    Use WAVE tool for identifying accessibility issues and
+                    ensuring content usability across different devices and
+                    environments.
+                    <a href="https://wave.webaim.org/" target="_blank"
+                      >Test your accessibility</a
+                    >.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mt-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h2 class="card-title h4">Heading Structure</h2>
+                  <p class="card-text">
+                    Use proper heading hierarchy (h1-h6) to break content into
+                    logical chunks. Ensure one unique h1 per page that reflects
+                    specific content.
+                  </p>
+                  <button
+                    class="btn btn-card btn-lg"
+                    data-audio-id=""
+                    aria-label="Read the content"
+                  >
+                    Listen 🔊
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
-
-      <!-- Appearance Tab -->
-      <section class="tab-pane fade" id="appearance" role="tabpanel">
-        <header>
-          <h2 class="visually-hidden">Appearance</h2>
-        </header>
-        <div class="row">
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Appearance</h2>
-                <p class="card-text">
-                  Test content in specialized modes like High Contrast. Ensure good spacing and avoid conveying
-                  information by color alone.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html" target="_blank">Learn about
-                    color use</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Specialized Browsing Modes</h2>
-                <p class="card-text">
-                  Verify content remains legible in high contrast and inverted color modes. Ensure icons and form fields
-                  are clear against backgrounds.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Text Resizing</h2>
-                <p class="card-text">
-                  Test content at 200% zoom to ensure readability without overlap. Maintain clarity when text is
-                  enlarged.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
+      <section>
+        <p class="text-center p-5">
+          This is not a comprehensive guide on accessibility, for more in-depth
+          information and resources, we encourage you to
+          <a href="https://www.a11yproject.com/checklist/" target="_blank"
+            >read further.</a
+          >
+        </p>
       </section>
+    </main>
 
-      <!-- Media & Interaction -->
-      <section class="tab-pane fade" id="media-interaction" role="tabpanel">
-        <header>
-          <h2 class="visually-hidden">Media & Interaction</h2>
-        </header>
-        <div class="row">
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Animation Control</h2>
-                <p class="card-text">
-                  Limit flashing content and respect prefers-reduced-motion settings. Ensure animations are subtle to
-                  prevent triggering seizures.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html"
-                    target="_blank">Learn about
-                    animation guidelines</a>.
-                </p>
-              </div>
-            </div>
-          </article>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
 
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Audio Controls</h2>
-                <p class="card-text">
-                  Never autoplay audio without user consent. Provide clear controls for volume adjustment and
-                  transcripts for all audio content.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html" target="_blank">Learn about
-                    audio
-                    controls</a>.
-                </p>
-              </div>
-            </div>
-          </article>
+    <!-- Load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Video Content</h2>
-                <p class="card-text">
-                  Include captions and descriptive transcripts for all videos. Remove any strobing effects that could
-                  trigger seizures.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html" target="_blank">Learn
-                    about video
-                    accessibility</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Media Controls</h2>
-                <p class="card-text">
-                  Provide keyboard-accessible controls for all media. Include a global pause function using the Space
-                  key without disrupting page scrolling.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Forms & Tables -->
-      <section class="tab-pane fade" id="forms-and-tables" role="tabpanel">
-        <header>
-          <h2 class="visually-hidden">Forms & Tables</h2>
-        </header>
-        <div class="row">
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Form Inputs</h2>
-                <p class="card-text">
-                  Use proper input types and ensure labels are properly associated. Enable autocomplete for common
-                  fields like name and address.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html"
-                    target="_blank">Learn about input
-                    purpose</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Form Groups</h2>
-                <p class="card-text">
-                  Group related fields using fieldset and legend elements. Keep descriptions concise and
-                  informative.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html"
-                    target="_blank">Learn about form
-                    relationships</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Error Handling</h2>
-                <p class="card-text">
-                  Provide clear error messages using aria-describedby. Use aria-invalid to indicate error states.
-                  <a href="https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html" target="_blank">Learn
-                    about error
-                    messaging</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Content Structure -->
-      <section class="tab-pane fade" id="content-structure" role="tabpanel">
-        <header>
-          <h2 class="visually-hidden">Content Structure</h2>
-        </header>
-        <div class="row">
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">HTML Validation</h2>
-                <p class="card-text">
-                  Ensure valid HTML for consistent experience across browsers and assistive technologies. Use the lang
-                  attribute in the html element.
-                  <a href="https://validator.w3.org/nu/" target="_blank">Validate your HTML</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Page Titles</h2>
-                <p class="card-text">
-                  Create unique, descriptive titles for each page to guide users instantly and enhance navigation with
-                  many open tabs.
-                  <a href="https://www.a11yproject.com/checklist/#provide-a-unique-title-for-each-page-or-view"
-                    target="_blank">Learn
-                    about page titles</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Linear Flow</h2>
-                <p class="card-text">
-                  Remove unnecessary tabindex values and let focusable elements shine naturally. Reserve tabindex="0"
-                  and "-1" for special cases.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Logical Flow</h2>
-                <p class="card-text">
-                  Match focus order with visual layout and ensure seamless movement from top to bottom without
-                  unexpected jumps.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Accessibility Validation</h2>
-                <p class="card-text">
-                  Use WAVE tool for identifying accessibility issues and ensuring content usability across different
-                  devices and environments.
-                  <a href="https://wave.webaim.org/" target="_blank">Test your accessibility</a>.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-md-4 mt-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h2 class="card-title h4">Heading Structure</h2>
-                <p class="card-text">
-                  Use proper heading hierarchy (h1-h6) to break content into logical chunks. Ensure one unique h1 per
-                  page that reflects specific content.
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </section>
-    <section>
-      <p class="text-center p-5">This is not a comprehensive guide on accessibility, for more in-depth information and resources, we encourage
-        you to <a href="https://www.a11yproject.com/checklist/" target="_blank">read further.</a></p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <div id="footer-placeholder"></div>
-
-  <!-- Load jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/scripts/navbar-footer.js"></script>
-  <script src="assets/scripts/navigation.js"></script>
-  <script src="assets/scripts/themetoggle.js"></script>
-  <script src="assets/scripts/font-toggle.js"></script>
-  <script src="assets/scripts/main.js"></script>
-  <script type="module" src="assets/scripts/settings.js"></script>
-</body>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/navbar-footer.js"></script>
+    <script src="assets/scripts/navigation.js"></script>
+    <script src="assets/scripts/themetoggle.js"></script>
+    <script src="assets/scripts/font-toggle.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script type="module" src="assets/scripts/settings.js"></script>
+    <script type="module" src="assets/scripts/audioFiles.js"></script>
+    <script type="module" src="assets/scripts/readAudio.js"></script>
+    <script type="module" src="assets/scripts/settings.js"></script>
+  </body>
 </html>
