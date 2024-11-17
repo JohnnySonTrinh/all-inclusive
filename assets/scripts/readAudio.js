@@ -10,12 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize audio objects for each audio file
   audioFiles.forEach((item) => {
     const audio = new Audio(item.audioPath);
+
+    // Set the volume to currentVolume or default to 1
+    audio.volume = window.currentVolume || 1;
+
     audioMap[item.id] = {
       audio: audio,
       isPlaying: false,
       button: null,
     };
   });
+
+  // Attach audioMap to the global window object
+  window.audioMap = audioMap;
 
   // Attach event listeners to each button
   readAudioButtons.forEach((button) => {
