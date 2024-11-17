@@ -77,17 +77,21 @@ Connect with our caffeinated coders behind project **All-Inclusive**:
 
 ##### Target Audience
 
-- to-do
+- People who embrace inclusivity and accessible web design.
 
 ##### First Time Visitors Goals
 
 As a firs time user, 
-- to-do
+- I want to understand the principles of inclusive web design.
+- I want to learn how to implement these principles in my own projects.
+- I want to find resources and tools that can help me get started.
 
 ##### Returning Visitors Goals
 
 As a returning visitor, 
-- to-do
+- I want to explore advanced techniques for accessible web design.
+- I want to check for updates on new techniques in accessible web design.
+- I want to stay updated on the latest trends and best practices in accessible web design.
 
 ##### Frequent Visitors Goals
 
@@ -96,7 +100,7 @@ As a frequent visitor,
 
 ##### Site Goals
 
-To-do
+The site goal are to provide valuable resources and information on inclusive web design and promote online accessibility and inclusivity.
 
 ##### Scope
 
@@ -110,11 +114,21 @@ A limited color palette was chosen to avoid visual clutter, well in line with th
 
 ##### Fonts
 
-To-do
+- [Inter](https://fonts.google.com/specimen/Inter): A sans-serif typeface designed for readability on screens for text.
+- [Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather): A serif typeface that is also designed for readability for headings.
+- [OpenDyslexic](https://opendyslexic.org/): A typeface for Dyslexia
 
 ##### Wireframes
 
-The wireframes were created using [Canva](to-do).
+The wireframes were created using [Balsamiq](https://balsamiq.com/wireframes/).
+
+![Wireframe Landing Page](/documentation/wireframes/Landing%20Page.png)
+
+![Wireframe Core Concepts](/documentation/wireframes/Core%20Concepts.png)
+
+![Wireframe ](/documentation/wireframes/Contact%20Page.png)
+
+![Wireframe About Us](/documentation/wireframes/About%20us%20Page.png)
 
 ## Agile Methodology
 
@@ -158,7 +172,7 @@ The Home page serves as an attractive introduction to the website, featuring a c
 ##### About Us
 
 The About Us page offers details about the team responsible for the project.
-![feature-about](to-do)
+![feature-about](/documentation/features/feature-about-us.png)
 
 ##### Error Pages
 
@@ -230,6 +244,7 @@ Table to-do
 - [World Wide Web Consortium's HTML validator](https://validator.w3.org/) to validate HTML
 - [World Wide Web Consortium's CSS validator](https://validator.w3.org/) to validate CSS
 - [JSHint Validator](https://jshint.com/) to validate JavaScript
+- [The A11y Project Checklist](https://www.a11yproject.com/checklist/) for accessibility guidelines
 - [Balsamiq](https://balsamiq.com/wireframes/) to create the wireframes 
 - [Canva](https://www.canva.com/) to create images
 - [Photoroom](https://www.photoroom.com/tools/background-remover) to remove background from images
@@ -238,6 +253,7 @@ Table to-do
 - Color Contrast Checker to-do
 - [Techsini.com](https://techsini.com/multi-mockup/index.php) to create the mockup for this README
 - [Fontawesome](https://fontawesome.com/) for icons
+- [Balsamiq](https://balsamiq.com/wireframes/) for wireframes
 
 ## Deployment and Local Development
 
