@@ -53,7 +53,7 @@ function loadNavbar() {
                                 <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Adjust the audio volume">
                                     <div class="nav-link d-flex align-items-center">
                                         
-                                        <label for="volume-control"></label>
+                                        <label for="volume-control" class="d-none">Volume Control</label>
                                         <input
                                             type="range"
                                             id="volume-control"

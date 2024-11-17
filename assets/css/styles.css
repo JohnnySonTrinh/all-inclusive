@@ -21,6 +21,7 @@
     --text-color: #333333;
     /* Charcoal Gray */
     --accent-color: #FF7F50;
+    --button-hover-color: #690000;
     /* Warm Orange */
     --muted-color: #4f4e4e;
     --links-color: #fff;
@@ -46,6 +47,7 @@
     --muted-color: #b3b2b2;
     --links-color: #000;
     --nav-hover-color: #373636;
+    --button-hover-color: #d6d5d5;
     --nav-active-color: #690000;
     --white-color: #FFFFFF;
     --black-color: #000000;
