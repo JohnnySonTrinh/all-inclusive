@@ -2,10 +2,26 @@
     white-space: nowrap;
 }
 
+.card-body {
+    padding: 1rem;
+}
+
+.team-member-image-container {
+    width: 30%;
+    max-width: 300px;
+    min-width: 100px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
 .team-member-image {
-    height: 300px;
-    object-fit: cover;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+}
+
+.team-member-info {
+    flex-grow: 1;
 }
 
 .list-inline-item .btn {
@@ -24,6 +40,19 @@
     transform: scale(1.02);
 }
 
-.btn-outline-primary {
-    border-color: var(--primary-color);
+@media (max-width: 575px) {
+    .nowrap {
+        white-space: normal;
+    }
+
+    .card-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-member-image-container {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
 }
