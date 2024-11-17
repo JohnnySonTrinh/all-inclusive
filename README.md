@@ -1,77 +1,11 @@
 # All-Inclusive
+
 **View the [live project here](https://johnnysontrinh.github.io/all-inclusive/index.html).**<br>
-*(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)*
+_(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)_
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive)
-
-## The Dream Team
-
-Connect with our caffeinated coders behind project **All-Inclusive**:
-
-### Alina 🧠
-
-- [GitHub](https://github.com/TeodoraAlina) | [LinkedIn](https://www.linkedin.com/in/alina-teodora-brinzac/)
-
-### Max ⚡
-
-- [GitHub](https://github.com/d0bledore) | [LinkedIn](https://www.linkedin.com/)
-
-### Gudrun 🖱️
-
-- [GitHub](http://github.com/g-omarsdottir) | [LinkedIn](http://linkedin.com/in/gudrun-omarsdottir/)
-
-### Kristian 🔗
-
-- [GitHub](https://github.com/KC-85) | [LinkedIn](https://www.linkedin.com/in/kristian-cross-4976622b7/)
-
-### Daisy 👁️
-
-- [GitHub](https://github.com/Dee-McG) | [LinkedIn](https://www.linkedin.com/in/mcgirr-daisy/)
-
-### Johnny 🐛
-
-- [GitHub](https://github.com/JohnnySonTrinh) | [LinkedIn](https://www.linkedin.com/in/johnny-trinh-dev/)
-
-
-## Table Of Content
-
-- [User Experience](#)
-  - [Site Goals](#)
-  - [Scope](#)
-- [Design](#)
-  - [Colour Scheme](#)
-  - [Fonts](#)
-  - [Wireframes](#)
-- [Agile Methodology](#)
-    - [Kanban Board](#)
-    - [EPICS(Milestones)](#to-do)
-    - [User Stories issues](#to-do)
-    - [ MoSCoW Prioritization Method](#)
-- [Features](#)
-  - [Navbar](#)
-  - [Footer](#)
-  - [Home](#)
-  - [Error Pages](#)
-  - [Future Features](#)
-- [Testing](#)
-  - [Manual Testing](#)
-  - [Automated Testing](#)
-- [Bugs](#logo-dark-xs-bugs)
-- [Technologies And Languages](#)
-  - [Languages Used](#)
-  - [Technologies and programs](#)
-- [Deployment](#)
-  - [Deployment](#)
-  - [Creating A Fork](#creating-a-fork)
-  - [Cloning Repository](#cloning-repository)
-- [Credits](#logo-dark-xs-credits)
-  - [Media](#media)
-  - [Code](#code)
-  - [Contributors](#contributors)
-  - [Acknowledgements](#acknowledgements)
-  - [Comments](#comments)
 
 ## User Experience
 
@@ -81,10 +15,9 @@ Connect with our caffeinated coders behind project **All-Inclusive**:
 
 ##### First Time Visitors Goals
 
-As a firs time user, 
-- I want to understand the principles of inclusive web design.
-- I want to learn how to implement these principles in my own projects.
-- I want to find resources and tools that can help me get started.
+As a firs time user,
+
+- to-do
 
 ##### Returning Visitors Goals
 
@@ -95,7 +28,8 @@ As a returning visitor,
 
 ##### Frequent Visitors Goals
 
-As a frequent visitor, 
+As a frequent visitor,
+
 - to-do
 
 ##### Site Goals
@@ -146,12 +80,12 @@ The epics outline the high-level objectives and functionalities of the project. 
 
 User stories provide detailed descriptions that define the project's functionalities from the user's perspective.
 
-For details to the Epics and User Stories, please visit the project's [Kanban Board]( https://github.com/users/JohnnySonTrinh/projects/8/views/1).
+For details to the Epics and User Stories, please visit the project's [Kanban Board](https://github.com/users/JohnnySonTrinh/projects/8/views/1).
 
 ##### The MoSCoW Prioritization Method
 
 The acronym represents Must Have, Should Have, Could Have, and Won't Have. To efficiently manage resources and development flow according to urgency and necessity, the MoSCoW prioritization method was utilized. This structured approach helps identify which features are essential for the current phase (Must Have), which can be included if time permits (Should Have), which may be postponed for future iterations (Could Have), and which will be excluded from this iteration or are unlikely to be implemented (Won't Have).
-The priorities are reflected on each task with **labels** on each user story on [this project's Kanban board]( https://github.com/users/JohnnySonTrinh/projects/8/views/1)
+The priorities are reflected on each task with **labels** on each user story on [this project's Kanban board](https://github.com/users/JohnnySonTrinh/projects/8/views/1)
 
 ## Features
 
@@ -184,6 +118,7 @@ The project implements a custom HTML error page for the 404 (Not Found) status c
 ## Testing
 
 ##### Manual Testing
+
 To-do table of manual testing by user stories
 
 ##### Automated Testing
@@ -198,6 +133,7 @@ The HTML code passed through the [World Wide Web Consortium's validator](https:/
 <summary>Click for Image HTML Validator Testing</summary>
 
 ![html-validator](to-do)
+
 </details>
 
 ##### CSS Validator Testing
@@ -208,6 +144,7 @@ No errors were detected when passing through the official [World Wide Web Consor
 <summary>Click for Image CSS Validator Testing</summary>
 
 ![css-validator](to-do)
+
 </details>
 
 ##### JavaScript Validator Testing
@@ -218,6 +155,7 @@ The JavaScript passed without errors through the [JSHint Validator](https://jshi
 <summary>Click for Image JavaScript Validator Testing</summary>
 
 ![js-validator](to-do)
+
 </details>
 
 ## Bugs
@@ -260,6 +198,7 @@ Table to-do
 ##### Cloning Repository
 
 To clone the repository:
+
 - Log in to GitHub and navigate to the repository of this project.
 - Click on the green button "Code" to open the dropdown menu, select "Clone with HTTPS, SSH or GitHub CLI" and copy the link provided.
 - Open "Terminal" (or "Git Bash") in your code editor.
@@ -270,12 +209,14 @@ To clone the repository:
 ##### Creating A Fork
 
 To fork the repository:
+
 - Log in to Github and navigate to the repository of this project.
 - Click the button "Fork" in the top right corner to open dropdown menu and select "Create a new fork".
 
 ##### Deployment
 
 To deploy the repository using GitHub Pages:
+
 - Navigate to settings of the repository on the top navigation menu.
 - Navigate to Pages on the left sidebar navigation menu.
 - In the section "Build and deployment”, go to Source and select "Deploy from a branch" from the navigation dropdown menu.
@@ -295,6 +236,34 @@ To deploy the repository using GitHub Pages:
 ##### Code
 
 - to-do
+
+## The Dream Team
+
+Connect with our caffeinated coders behind project **All-Inclusive**:
+
+### Alina 🧠
+
+- [GitHub](https://github.com/TeodoraAlina) | [LinkedIn](https://www.linkedin.com/in/alina-teodora-brinzac/)
+
+### Max ⚡
+
+- [GitHub](https://github.com/d0bledore) | [LinkedIn](https://www.linkedin.com/)
+
+### Gudrun 🖱️
+
+- [GitHub](http://github.com/g-omarsdottir) | [LinkedIn](http://linkedin.com/in/gudrun-omarsdottir/)
+
+### Kristian 🔗
+
+- [GitHub](https://github.com/KC-85) | [LinkedIn](https://www.linkedin.com/in/kristian-cross-4976622b7/)
+
+### Daisy 👁️
+
+- [GitHub](https://github.com/Dee-McG) | [LinkedIn](https://www.linkedin.com/in/mcgirr-daisy/)
+
+### Johnny 🐛
+
+- [GitHub](https://github.com/JohnnySonTrinh) | [LinkedIn](https://www.linkedin.com/in/johnny-trinh-dev/)
 
 ##### Acknowledgements
 
