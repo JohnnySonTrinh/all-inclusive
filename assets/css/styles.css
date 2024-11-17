@@ -102,6 +102,8 @@ a:hover {
     color: #1A5F7A;
 }
 
+/* NavBar */
+
 .navbar,
 .footer {
     background-color: var(--primary-color);
@@ -150,6 +152,7 @@ a:hover {
     width: 100%;
 }
 
+/* Settings dropdown menu */
 
 #theme-toggle {
     color: var(--links-color);
@@ -224,9 +227,16 @@ a:hover {
     color: var(--links-color);
 }
 
+/* Tooltip */
+
 .tooltip-inner {
     background-color: var(--primary-color) !important;
     color: var(--links-color);
     border: 3px solid var(--primary-color);
     box-shadow: 0 4px 10px var(--black-color);
 }
+
+:focus {
+    outline: 2px solid var(--accent-color) !important;
+    outline-offset: 2px !important;
+  }
