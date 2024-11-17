@@ -1,5 +1,29 @@
+.nowrap {
+    white-space: nowrap;
+}
+
 .team-member-image {
     height: 300px;
     object-fit: cover;
     width: 100%;
+}
+
+.list-inline-item .btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1);
+
+}
+
+.list-inline-item .btn:hover {
+    background-color: var(--nav-active-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    transform: scale(1.02);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
 }
