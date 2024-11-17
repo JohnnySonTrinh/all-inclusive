@@ -6,6 +6,15 @@
     padding: 1rem;
 }
 
+.btn-primary {
+    color: var(--links-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--button-hover-color) !important;
+    border: 2px solid var(--button-hover-color) !important;
+}
+
 .team-member-image-container {
     width: 30%;
     max-width: 300px;

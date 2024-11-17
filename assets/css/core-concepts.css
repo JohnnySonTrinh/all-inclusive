@@ -1,7 +1,13 @@
 .tab {
   background-color: var(--primary-color) !important;
-  color: var(--white-color) !important;
+  color: var(--links-color) !important;
 }
+
+.learn-link {
+  color: #1A5F7A;
+}
+
+
 
 @media (max-width: 767px) {
   .nav-tabs .nav-item {
