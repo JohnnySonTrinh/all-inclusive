@@ -29,7 +29,7 @@
     <!-- Main Content -->
     <main>
       <!-- For keyboard-only users: A Hidden "skip to form"-link -->
-      <a href="#semantic-html" class="visually-hidden-focusable"
+      <a href="#contact-form" class="visually-hidden-focusable"
         >Skip to form</a
       >
       <!-- Header -->
@@ -39,12 +39,17 @@
           We’d love to hear from you. Fill out the form below and we’ll get back
           to you soon.
         </p>
+        <img
+          src="assets/images/profile-details.svg"
+          alt="ARIA Attributes Interaction Diagram"
+          class="img-fluid rounded"
+        />
       </header>
 
       <!-- Contact Form Section -->
       <section id="main-content" class="contact-section">
         <div class="card h-100">
-          <div class="card-body"> 
+          <div class="card-body">
           <form
             id="contact-form"
             class="contact-form"
@@ -53,7 +58,7 @@
             aria-labelledby="contact-form-title"
           >
           <h2 class="card-title text-center">Contact Information</h2>
-
+          
             <!-- Name Field -->
             <div class="form-group">
               <label for="name">Name <span class="required">*</span></label>
@@ -63,21 +68,21 @@
                 name="name"
                 required
                 aria-required="true"
-                placeholder="Your full name"
+                placeholder="First and Last Name"
               />
             </div>
 
-            <!-- Telephone Field -->
+            <!-- Email Field -->
             <div class="form-group">
-              <label for="telephone"
-                >Telephone <span class="required">*</span></label
+              <label for="email"
+                >Email <span class="required">*</span></label
               >
               <input
-                id="telephone"
-                name="telephone"
+                id="email"
+                name="email"
                 required
                 aria-required="true"
-                placeholder="Telephone number here"
+                placeholder="email@address.com"
               ></input>
             </div>
 
@@ -91,7 +96,7 @@
                 name="subject"
                 required
                 aria-required="true"
-                placeholder="Your subject here"
+                placeholder="Enter subject here"
               ></input>
             </div>
 
@@ -105,12 +110,12 @@
                 name="message"
                 required
                 aria-required="true"
-                placeholder="Your message"
+                placeholder="Enter your message here"
               ></textarea>
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </section>
@@ -134,5 +139,6 @@
     <script src="assets/scripts/themetoggle.js"></script>
     <script src="assets/scripts/font-toggle.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script type="module" src="assets/scripts/settings.js"></script>
   </body>
 </html>
