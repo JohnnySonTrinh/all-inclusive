@@ -31,6 +31,26 @@ const audioFiles = [
     id: "inclusive-design",
     audioPath: "assets/tts/inclusive-design.mp3",
   },
+  {
+    id: "why-accessibility-matters",
+    audioPath: "assets/tts/why-accessibility-matters.mp3",
+  },
+  {
+    id: "david-chambers",
+    audioPath: "assets/tts/david-chambers.mp3",
+  },
+  {
+    id: "tom-mclaughlin",
+    audioPath: "assets/tts/tom-mclaughlin.mp3",
+  },
+  {
+    id: "emily-carter",
+    audioPath: "assets/tts/emily-carter.mp3",
+  },
+  {
+    id: "alexandra-olivia",
+    audioPath: "assets/tts/alexandra-olivia.mp3",
+  },
 ];
 
 export default audioFiles;
