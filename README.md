@@ -1,5 +1,7 @@
 # All-Inclusive
 
+![Mockup All-Inclusive](/documentation/features/mockup-all-inclusive.png)
+
 **View the [live project here](https://johnnysontrinh.github.io/all-inclusive/index.html).**<br>
 _(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)_
 
@@ -16,21 +18,23 @@ _(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)_
 ##### First Time Visitors Goals
 
 As a firs time user,
-
-- to-do
+- I want to understand the principles of inclusive web design.
+- I want to learn how to implement these principles in my own projects.
+- I want to find resources and tools that can help me get started.
+- I want to see examples of how the principles will look like on a rendered website.
 
 ##### Returning Visitors Goals
 
 As a returning visitor, 
 - I want to explore advanced techniques for accessible web design.
 - I want to check for updates on new techniques in accessible web design.
-- I want to stay updated on the latest trends and best practices in accessible web design.
+- I want to have the chance to ask questions by email about the implementation.
 
 ##### Frequent Visitors Goals
 
 As a frequent visitor,
-
-- to-do
+- I want to ask the team questions or give feedback of my own implementation of accessible web principles.
+- I want access the main guidelines in one place in a pleasing design.
 
 ##### Site Goals
 
@@ -46,11 +50,24 @@ The website is fully responsive on all screen sizes.
 
 A limited color palette was chosen to avoid visual clutter, well in line with the topic of accessibility.
 
+The website offers lightmode and darkmode. Both are easy on the eye and well readable.
+
+[Coolors Color Contrast Light Mode](https://coolors.co/contrast-checker/333333-f5f5f5)
+
+![Coolors Color Contrast Light Mode](/documentation/validation/validator-colorcontrast-lightmode.png)
+
+[Coolors Color Contrast Dark Mode](https://coolors.co/contrast-checker/e0e0e0-121212)
+
+![Coolors Color Contrast Light Mode](/documentation/validation/validator-colorcontrast-darkmode.png)
+
 ##### Fonts
 
 - [Inter](https://fonts.google.com/specimen/Inter): A sans-serif typeface designed for readability on screens for text.
 - [Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather): A serif typeface that is also designed for readability for headings.
-- [OpenDyslexic](https://opendyslexic.org/): A typeface for Dyslexia
+- [OpenDyslexic](https://opendyslexic.org/): A typeface for Dyslexia.
+    - The user can toggle all text content to this typeface using the settings in the navigation bar.
+
+    ![Opendyslexic toggle](/documentation/features/feature-toggle-font.png)
 
 ##### Wireframes
 
@@ -93,24 +110,56 @@ The priorities are reflected on each task with **labels** on each user story on 
 
 The website features a clean layout and a clear visual hierarchy to facilitate easy navigation. The navigation bar always indicates the user's current location on the site. Navigation elements, including links and buttons, are prominently positioned and clearly labeled.
 
+The navbar features a few custom settings. 
+
+The user can toggle all text content to a different font, Opendyslexic, which is often preferred by persons with dislexia.
+
+![Font toggle feature](/documentation/features/feature-togglefont.png)
+
+The user can toggle between Lightmode and Darkmode.
+
+![Light / Dark Mode feature](/documentation/features/feature-toggle-mode.png)
+
 ##### Footer
 
-The footer contains a user-friendly contact form and copyrights information.
+The footer contains a link to the user-friendly contact form and copyrights information.
+
+![feature footer](/documentation/features/feature-footer.png)
 
 ##### Home
 
 The Home page serves as an attractive introduction to the website, featuring a concise overview of its offerings.
 
-![feature-home](to-do)
+![feature-home](/documentation/features/feature-home.png)
+
+##### Profiling
+
+The Profiling page offers case study details on why accessibility matters by introducing people who use or even rely on it.
+
+![feature-profiling](/documentation/features/feature-profiling.png)
+
+##### Core Concepts
+
+The Core Concepts page introduces some of the main guidelines for accessible web with anchored references to the details on implementation and further details.
+
+![feature-core-concepts](/documentation/features/feature-core-concepts.png)
 
 ##### About Us
 
 The About Us page offers details about the team responsible for the project.
+
 ![feature-about](/documentation/features/feature-about-us.png)
+
+##### Contact
+
+The Contact page offers the user the chance to contact the All-Inclusive team via a user-friendly contact form.
+
+![feature-contact](/documentation/features/contact.png)
 
 ##### Error Pages
 
 The project implements a custom HTML error page for the 404 (Not Found) status code to enhance user experience. This error page features a consistent design with the website, provides a clear, user-friendly explanation of the error without technical jargon, and uses straightforward language. Additionally, it includes a visually appealing image that aligns with the website's theme.
+
 ![error-page](to-do)
 
 ##### Future Features
@@ -119,7 +168,7 @@ The project implements a custom HTML error page for the 404 (Not Found) status c
 
 ##### Manual Testing
 
-To-do table of manual testing by user stories
+
 
 ##### Automated Testing
 
@@ -138,7 +187,7 @@ The HTML code passed through the [World Wide Web Consortium's validator](https:/
 
 ##### CSS Validator Testing
 
-No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://validator.w3.org/) for CSS.
+No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://jigsaw.w3.org/css-validator/) for CSS.
 
 <details>
 <summary>Click for Image CSS Validator Testing</summary>
@@ -154,7 +203,7 @@ The JavaScript passed without errors through the [JSHint Validator](https://jshi
 <details>
 <summary>Click for Image JavaScript Validator Testing</summary>
 
-![js-validator](to-do)
+![js-validator](/documentation/validation/validator-main.js.png)
 
 </details>
 
@@ -184,11 +233,13 @@ Table to-do
 - [JSHint Validator](https://jshint.com/) to validate JavaScript
 - [The A11y Project Checklist](https://www.a11yproject.com/checklist/) for accessibility guidelines
 - [Balsamiq](https://balsamiq.com/wireframes/) to create the wireframes 
-- [Canva](https://www.canva.com/) to create images
+- [Canva](https://www.canva.com/) to create the website logo
+- [Leonardo.ai](https://leonardo.ai/) to create images
+- [favicon.io](https://favicon.io/favicon-converter/) to create the favicon
 - [Photoroom](https://www.photoroom.com/tools/background-remover) to remove background from images
 - [Pixelied](https://pixelied.com/convert) to convert images to webp format
 - [TinyPNG](https://tinypng.com/) to compress images
-- Color Contrast Checker to-do
+- [Color Contrast Checker](https://coolors.co/contrast-checker/112a46-acc8e5) for color contrast check
 - [Techsini.com](https://techsini.com/multi-mockup/index.php) to create the mockup for this README
 - [Fontawesome](https://fontawesome.com/) for icons
 - [Balsamiq](https://balsamiq.com/wireframes/) for wireframes
@@ -228,14 +279,13 @@ To deploy the repository using GitHub Pages:
 
 ##### Media
 
-- [to-do](to-do) for images
-- [to-do](to-do) for the website logo
-- [to-do](to-do) for the favicon
-- [to-do](to-do) for ...
+- [Leonardo.ai](https://leonardo.ai/) to create images
+- [Canva](https://www.canva.com/) for the website logo
+- [favicon.io](https://favicon.io/favicon-converter/) for the favicon
 
-##### Code
+##### Content
 
-- to-do
+- [The A11y Project Checklist](https://www.a11yproject.com/checklist/) for guidelines on web accessibility
 
 ## The Dream Team
 
