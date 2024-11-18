@@ -214,6 +214,17 @@ a:hover {
   width: 100%;
 }
 
+/* Settings dropdown button */
+#settings-toggle.nav-link:hover,
+#settings-toggle.nav-link:focus {
+  background-color: transparent;
+  color: inherit;
+}
+
+#settings-toggle.nav-link {
+  transition: none;
+}
+
 /* Settings dropdown menu */
 
 #theme-toggle {
