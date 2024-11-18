@@ -3,7 +3,7 @@
 ![Mockup All-Inclusive](/documentation/features/mockup-all-inclusive.png)
 
 **View the [live project here](https://johnnysontrinh.github.io/all-inclusive/index.html).**<br>
-_(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)_
+_(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive/commits/main)
@@ -13,15 +13,16 @@ _(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)_
 
 ##### Target Audience
 
-- People who embrace inclusivity and accessible web design.
+- People who embrace inclusivity and accessible web design. The website offers users the opportunity to try using assistive technology without knowing how to use it or having to download any apps to explore it.
 
 ##### First Time Visitors Goals
 
-As a firs time user,
+As a first time user,
 - I want to understand the principles of inclusive web design.
 - I want to learn how to implement these principles in my own projects.
 - I want to find resources and tools that can help me get started.
 - I want to see examples of how the principles will look like on a rendered website.
+- I can experiement with accessible features without having access to assistive technology or know how to use it.
 
 ##### Returning Visitors Goals
 
@@ -34,7 +35,7 @@ As a returning visitor,
 
 As a frequent visitor,
 - I want to ask the team questions or give feedback of my own implementation of accessible web principles.
-- I want access the main guidelines in one place in a pleasing design.
+- I want access the main guidelines for web accessibility in one place in a pleasing design.
 
 ##### Site Goals
 
@@ -148,74 +149,26 @@ The Core Concepts page introduces some of the main guidelines for accessible web
 
 The About Us page offers details about the team responsible for the project.
 
-![feature-about](/documentation/features/feature-about-us.png)
+![feature-about](/documentation/features/feature-core-concepts.png)
 
 ##### Contact
 
 The Contact page offers the user the chance to contact the All-Inclusive team via a user-friendly contact form.
 
-![feature-contact](/documentation/features/contact.png)
+![feature-contact](/documentation/features/feature-contact.png)
 
 ##### Error Pages
 
 The project implements a custom HTML error page for the 404 (Not Found) status code to enhance user experience. This error page features a consistent design with the website, provides a clear, user-friendly explanation of the error without technical jargon, and uses straightforward language. Additionally, it includes a visually appealing image that aligns with the website's theme.
 
-![error-page](to-do)
+Here is the error page featured with the toggled opendyslexic font.
+
+![error-page](/documentation/features/feature-error-page.png)
 
 ##### Future Features
 
-## Testing
-
-##### Manual Testing
-
-
-
-##### Automated Testing
-
-All validator testing was performed on the deployed website.
-
-##### HTML Validator Testing
-
-The HTML code passed through the [World Wide Web Consortium's validator](https://validator.w3.org/) with no errors.
-
-<details>
-<summary>Click for Image HTML Validator Testing</summary>
-
-![html-validator](to-do)
-
-</details>
-
-##### CSS Validator Testing
-
-No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://jigsaw.w3.org/css-validator/) for CSS.
-
-<details>
-<summary>Click for Image CSS Validator Testing</summary>
-
-![css-validator](to-do)
-
-</details>
-
-##### JavaScript Validator Testing
-
-The JavaScript passed without errors through the [JSHint Validator](https://jshint.com/), a JavaScript Code Quality Tool.
-
-<details>
-<summary>Click for Image JavaScript Validator Testing</summary>
-
-![js-validator](/documentation/validation/validator-main.js.png)
-
-</details>
-
-## Bugs
-
-### Known Bugs
-
-There are no known bugs in the deployed project.
-
-### Resolved Bugs
-
-Table to-do
+- A choice between different voices so the user can customize their experience.
+- Resize text by toggling a button on the website.
 
 ## Technologies Used
 
