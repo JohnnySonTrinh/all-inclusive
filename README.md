@@ -238,17 +238,41 @@ The project implements a custom HTML error page for the 404 (Not Found) status c
 
 ![error-page](to-do)
 
-##### Future Features
+## Future Features
 
 ## Testing
 
-##### Manual Testing
+### Manual Testing
 
-##### Automated Testing
+#### Navbar
+
+The navigation bar has been fully tested and is working as intended. It consistently indicates the user's current location on the site, and all navigation elements are prominently positioned and clearly labeled. 
+
+#### Font Toggle Feature
+
+I've verified that the font toggle feature is functioning properly. Users can successfully switch between the default font and OpenDyslexic font across the entire website, enhancing readability for users with dyslexia. 
+
+#### Light/Dark Mode
+
+The Light/Dark Mode toggle has been tested and is working flawlessly. Users can easily switch between light and dark color schemes, improving accessibility and accommodating different visual preferences. 
+
+#### Error Page:
+
+The custom 404 error page has been thoroughly tested and is functioning as expected. It maintains a consistent design with the rest of the website, provides clear explanations without technical jargon, and includes appropriate visuals. The OpenDyslexic font toggle also works correctly on this page. 
+
+#### Core Concepts Page
+
+I've tested the Core Concepts page, and it's working as intended. All guidelines and anchored references are correctly implemented and accessible, providing users with a comprehensive introduction to the main guidelines for accessible web design. 
+
+#### Audio Functionality
+
+I've tested the audio functionality on every page, including the "Listen" buttons for each persona (David Chambers, Tom McLaughlin, Emily Carter, and Alexandra Olivia). All audio elements are working correctly, providing an additional layer of accessibility for users who prefer or require auditory content.
+
+### Automated Testing
 
 All validator testing was performed on the deployed website.
 
-##### HTML Validator Testing
+#### HTML Validator Testing
 
 The HTML code passed through the [World Wide Web Consortium's validator](https://validator.w3.org/) with no errors.
 
@@ -259,7 +283,7 @@ The HTML code passed through the [World Wide Web Consortium's validator](https:/
 
 </details>
 
-##### CSS Validator Testing
+#### CSS Validator Testing
 
 No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://jigsaw.w3.org/css-validator/) for CSS.
 
@@ -270,7 +294,7 @@ No errors were detected when passing through the official [World Wide Web Consor
 
 </details>
 
-##### JavaScript Validator Testing
+#### JavaScript Validator Testing
 
 The JavaScript passed without errors through the [JSHint Validator](https://jshint.com/), a JavaScript Code Quality Tool.
 
