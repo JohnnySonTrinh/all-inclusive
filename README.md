@@ -17,7 +17,7 @@ People who embrace inclusivity and accessible web design. The website offers use
 
 ### First Time Visitors Goals
 
-As a firs time user,
+As a first time user,
 
 - I want to understand the principles of inclusive web design.
 - I want to learn how to implement these principles in my own projects.
@@ -171,19 +171,10 @@ This project employs Agile Development Methods to oversee the development proces
 
 The project's Kanban Board can be viewed [here]( https://github.com/users/JohnnySonTrinh/projects/8/views/1
 
-### EPICS (Milestones) to-do or delete
-
-The epics outline the high-level objectives and functionalities of the project. These can be further broken down into more granular tasks, as specified in the user stories.
-
-### User Stories Issues to-do or delete
-
-User stories provide detailed descriptions that define the project's functionalities from the user's perspective.
-
-For details to the Epics and User Stories, please visit the project's [Kanban Board](https://github.com/users/JohnnySonTrinh/projects/8/views/1).
-
 ### The MoSCoW Prioritization Method
 
-The acronym represents Must Have, Should Have, Could Have, and Won't Have. To efficiently manage resources and development flow according to urgency and necessity, the MoSCoW prioritization method was utilized. This structured approach helps identify which features are essential for the current phase (Must Have), which can be included if time permits (Should Have), which may be postponed for future iterations (Could Have), and which will be excluded from this iteration or are unlikely to be implemented (Won't Have).
+The acronym represents Must Have, Should Have, Could Have, and Won't Have. To efficiently manage resources and development flow according to urgency and necessity, the MoSCoW prioritization method was utilized on tasks on the Kanban board. This structured approach helps identify which features are essential for the current phase (Must Have), which can be included if time permits (Should Have), which may be postponed for future iterations (Could Have), and which will be excluded from this iteration or are unlikely to be implemented (Won't Have).<br>
+
 The priorities are reflected on each task with **labels** on each user story on [this project's Kanban board](https://github.com/users/JohnnySonTrinh/projects/8/views/1)
 
 ## Features
@@ -201,6 +192,8 @@ The user can toggle all text content to a different font, Opendyslexic, which is
 The user can toggle between Lightmode and Darkmode.
 
 ![Light / Dark Mode feature](/documentation/features/feature-toggle-mode.png)
+
+The user can adjust the volume on the text-to-speech feature.
 
 ### Footer
 
@@ -230,7 +223,7 @@ The Core Concepts page introduces some of the main guidelines for accessible web
 
 The About Us page offers details about the team responsible for the project.
 
-![feature-about](/documentation/features/feature-core-concepts.png)
+![feature-about](/documentation/features/feature-about.png)
 
 ### Contact
 
