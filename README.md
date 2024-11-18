@@ -282,6 +282,7 @@ To deploy the repository using GitHub Pages:
 - [Leonardo.ai](https://leonardo.ai/) to create images
 - [Canva](https://www.canva.com/) for the website logo
 - [favicon.io](https://favicon.io/favicon-converter/) for the favicon
+- [UnDraw.co](https://undraw.co/) was used as the main source for illustrational images. 
 
 ##### Content
 
