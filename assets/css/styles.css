@@ -9,6 +9,15 @@
     font-family: 'Open-Dyslexic', sans-serif;
 }
 
+.dyslexic-font h1,
+.dyslexic-font h2,
+.dyslexic-font h3,
+.dyslexic-font h4,
+.dyslexic-font h5,
+.dyslexic-font h6 {
+    font-family: 'Open-Dyslexic', sans-serif;
+}
+
 /* root variables */
 :root {
     /* Accessible Color Palette */
