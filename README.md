@@ -52,7 +52,13 @@ A limited color palette was chosen to avoid visual clutter, well in line with th
 
 The website offers lightmode and darkmode. Both are easy on the eye and well readable.
 
+Color palette for lightmode:
+
 ![color-palette](/documentation/features/color-palette.png)
+
+Color palette for darkmode:
+
+![color-palette-dark](/documentation/features/color-palette-dark.png)
 
 [Coolors Color Contrast Light Mode](https://coolors.co/contrast-checker/333333-f5f5f5)
 
