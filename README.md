@@ -169,7 +169,7 @@ This project employs Agile Development Methods to oversee the development proces
 
 ### Kanban Board
 
-The project's Kanban Board can be viewed [here]( https://github.com/users/JohnnySonTrinh/projects/8/views/1
+The project's Kanban Board can be viewed [here](https://github.com/users/JohnnySonTrinh/projects/8/views/1
 
 ### The MoSCoW Prioritization Method
 
