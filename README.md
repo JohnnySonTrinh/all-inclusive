@@ -17,7 +17,8 @@ _(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)
 
 ### First Time Visitors Goals
 
-As a first time user,
+As a firs time user,
+
 - I want to understand the principles of inclusive web design.
 - I want to learn how to implement these principles in my own projects.
 - I want to find resources and tools that can help me get started.
@@ -26,7 +27,8 @@ As a first time user,
 
 ### Returning Visitors Goals
 
-As a returning visitor, 
+As a returning visitor,
+
 - I want to explore advanced techniques for accessible web design.
 - I want to check for updates on new techniques in accessible web design.
 - I want to have the chance to ask questions by email about the implementation.
@@ -34,6 +36,7 @@ As a returning visitor,
 ### Frequent Visitors Goals
 
 As a frequent visitor,
+
 - I want to ask the team questions or give feedback of my own implementation of accessible web principles.
 - I want access the main guidelines for web accessibility in one place in a pleasing design.
 
@@ -63,7 +66,7 @@ The website offers lightmode and darkmode. Both are easy on the eye and well rea
 
 ![Coolors Color Contrast Light Mode](/documentation/validation/validator-colorcontrast-darkmode.png)
 
-ICSS ':root' variables were used to easily update the global colour scheme by changing only one value instead of everywhere in the CSS file.
+CSS ':root' variables were used to easily update the global colour scheme by changing only one value instead of everywhere in the CSS file.
 ```css
 /* root variables */
 :root {
@@ -109,14 +112,38 @@ ICSS ':root' variables were used to easily update the global colour scheme by ch
 }
 ```
 
-### Fonts
+### Typography
 
-- [Inter](https://fonts.google.com/specimen/Inter): A sans-serif typeface designed for readability on screens for text.
-- [Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather): A serif typeface that is also designed for readability for headings.
-- [OpenDyslexic](https://opendyslexic.org/): A typeface for Dyslexia.
-    - The user can toggle all text content to this typeface using the settings in the navigation bar.
+For our inclusive project, we've chosen the Inter font to create an engaging and readable user interface. This font was selected for its clarity and legibility, enhancing the overall user experience for a diverse audience. Additionally, we've implemented the OpenDyslexic font as an optional setting that users can toggle in the accessibility settings. This allows individuals with dyslexia to switch to a font designed to improve readability for them.
 
-    ![Opendyslexic toggle](/documentation/features/feature-toggle-font.png)
+#### Inter
+
+Inter is a modern, open-source sans-serif typeface designed by Rasmus Andersson. It is crafted specifically for computer screens, with features that improve legibility at small sizes and on low-resolution displays. Key characteristics of Inter include:
+Tall x-height: Improves readability by making lower-case letters more distinguishable.
+Open letterforms: Enhances clarity by preventing letters from blending together.
+Clear distinctions: Between similar characters like I, l, and 1, reducing confusion.
+Extensive Language Support: Covers a wide range of languages and scripts.
+By using Inter, we ensure that our text content is easily readable across various devices and screen sizes, contributing to a better user experience for all visitors.
+
+#### OpenDyslexic
+
+OpenDyslexic is an open-source typeface designed to increase readability for readers with dyslexia. Created by Abelardo Gonzalez, it incorporates unique design features:
+Heavy weighted bottoms: Helps anchor the letters to the baseline, reducing letter flipping and inversion.
+Distinct letter shapes: Differentiates commonly confused characters, such as b and d, or p and q.
+Consistent spacing: Provides uniform spacing between letters and words to improve readability.
+By offering OpenDyslexic as a font option in our settings, we aim to make our content more accessible and inclusive, aligning with our commitment to support users with diverse needs.
+
+#### Implementation in CSS
+
+The fonts are included at the beginning of our main CSS file using the @import rule from Google Fonts and reliable font repositories. This method ensures that the fonts are available as soon as the CSS is loaded, maintaining a consistent typographic experience throughout the site.
+
+```css
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* Define OpenDyslexic Font */
+@import url("https://fonts.cdnfonts.com/css/open-dyslexic");
+```
 
 ## Wireframes
 
@@ -159,7 +186,7 @@ The priorities are reflected on each task with **labels** on each user story on 
 
 The website features a clean layout and a clear visual hierarchy to facilitate easy navigation. The navigation bar always indicates the user's current location on the site. Navigation elements, including links and buttons, are prominently positioned and clearly labeled.
 
-The navbar features a few custom settings. 
+The navbar features a few custom settings.
 
 The user can toggle all text content to a different font, Opendyslexic, which is often preferred by persons with dislexia.
 
@@ -209,7 +236,57 @@ The Contact page offers the user the chance to contact the All-Inclusive team vi
 
 The project implements a custom HTML error page for the 404 (Not Found) status code to enhance user experience. This error page features a consistent design with the website, provides a clear, user-friendly explanation of the error without technical jargon, and uses straightforward language. Additionally, it includes a visually appealing image that aligns with the website's theme.
 
+![error-page](to-do)
+
+##### Future Features
+
+## Testing
+
+##### Manual Testing
+
+##### Automated Testing
+
+All validator testing was performed on the deployed website.
+
+##### HTML Validator Testing
+
+The HTML code passed through the [World Wide Web Consortium's validator](https://validator.w3.org/) with no errors.
+
+<details>
+<summary>Click for Image HTML Validator Testing</summary>
+
+![html-validator](to-do)
+
+</details>
+
+##### CSS Validator Testing
+
+No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://jigsaw.w3.org/css-validator/) for CSS.
+
+<details>
+<summary>Click for Image CSS Validator Testing</summary>
+
+![css-validator](to-do)
+
+</details>
+
+##### JavaScript Validator Testing
+
+The JavaScript passed without errors through the [JSHint Validator](https://jshint.com/), a JavaScript Code Quality Tool.
+
+<details>
+<summary>Click for Image JavaScript Validator Testing</summary>
+
+![js-validator](/documentation/validation/validator-main.js.png)
+
+</details>
+
+## Bugs
+
+### Known Bugs
+
 Here is the error page featured with the toggled opendyslexic font.
+
 
 ![error-page](/documentation/features/feature-error-page.png)
 
@@ -233,7 +310,7 @@ Here is the error page featured with the toggled opendyslexic font.
 - [World Wide Web Consortium's CSS validator](https://validator.w3.org/) to validate CSS
 - [JSHint Validator](https://jshint.com/) to validate JavaScript
 - [The A11y Project Checklist](https://www.a11yproject.com/checklist/) for accessibility guidelines
-- [Balsamiq](https://balsamiq.com/wireframes/) to create the wireframes 
+- [Balsamiq](https://balsamiq.com/wireframes/) to create the wireframes
 - [Canva](https://www.canva.com/) to create the website logo
 - [Leonardo.ai](https://leonardo.ai/) to create images
 - [favicon.io](https://favicon.io/favicon-converter/) to create the favicon
