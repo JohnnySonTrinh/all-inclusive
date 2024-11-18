@@ -22,7 +22,7 @@ The HTML code passed through the [World Wide Web Consortium's validator](https:/
 <details>
 <summary>Click for Image HTML Validator Testing</summary>
 
-![html-validator](to-do)
+![html-validator](/documentation/validation/validator-html.png)
 
 </details>
 
