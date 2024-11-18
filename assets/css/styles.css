@@ -243,16 +243,14 @@ a:hover {
 
 .footer a {
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ease;
     margin: 0 10px;
     display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease scale(1);
+    transition: color 0.3s ease, transform 0.3s ease; /* Only one transition rule */
 }
 
 .footer a:hover {
-    color: var(--nav-active-color) !important;
-    transform: translateY(-3px);
-    transform: scale(1.2);
+    color: var(--nav-active-color) !important; /* Make sure the color variable is defined */
+    transform: translateY(-3px) scale(1.2); /* Combine both transformations */
 }
 
 .footer-links {
