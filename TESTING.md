@@ -7,15 +7,15 @@ For development documentation, please refer to the [README.md](README.md)<br>
 **View the [live project here](https://johnnysontrinh.github.io/all-inclusive/index.html).**<br>
 (To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)
 
-##### Manual Testing
+## Manual Testing
 
 
 
-##### Automated Testing
+## Automated Testing
 
 All validator testing was performed on the deployed website.
 
-##### HTML Validator Testing
+#### HTML Validator Testing
 
 The HTML code passed through the [World Wide Web Consortium's validator](https://validator.w3.org/) with no errors.
 
@@ -26,7 +26,7 @@ The HTML code passed through the [World Wide Web Consortium's validator](https:/
 
 </details>
 
-##### CSS Validator Testing
+### CSS Validator Testing
 
 No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://jigsaw.w3.org/css-validator/) for CSS.
 
@@ -37,7 +37,7 @@ No errors were detected when passing through the official [World Wide Web Consor
 
 </details>
 
-##### JavaScript Validator Testing
+### JavaScript Validator Testing
 
 The JavaScript passed without errors through the [JSHint Validator](https://jshint.com/), a JavaScript Code Quality Tool.
 
@@ -48,7 +48,7 @@ The JavaScript passed without errors through the [JSHint Validator](https://jshi
 
 </details>
 
-##### Lighthouse Report
+### Lighthouse Report
 
 ![Lighthouse report desktop](/documentation/validation/lighthouse-desktop-home.png)
 ![Lighthouse report desktop](/documentation/validation/lighthouse-desktop-profiling.png)
@@ -62,6 +62,15 @@ The JavaScript passed without errors through the [JSHint Validator](https://jshi
 ![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-about.png)
 ![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-contact.png)
 
+## Color Contrast
+
+[Coolors Color Contrast Light Mode](https://coolors.co/contrast-checker/333333-f5f5f5)
+
+![Coolors Color Contrast Light Mode](/documentation/validation/validator-colorcontrast-lightmode.png)
+
+[Coolors Color Contrast Dark Mode](https://coolors.co/contrast-checker/e0e0e0-121212)
+
+![Coolors Color Contrast Light Mode](/documentation/validation/validator-colorcontrast-darkmode.png)
 
 ## Bugs
 
@@ -76,7 +85,7 @@ There are no known bugs in the deployed project.
 | Merge conflicts                                      | Forking the repository and cloning it to the local machine caused time consuming merge conflicts.                                                                                                      | Create a branch for each feature and to merge it into the main branch. Allows a complete overview and access to each team members current task. | Solved |
 | Text-to-Speach, Toggle for Light-/Dark-Mode feature. | Users experienced an issue where their personalized settings for specifically dark mode, font toggling, and volume control—were not maintained when navigating between different pages of the website. | Use local storage to save the key value for Volume and Light-/Dark-Mode darkmode to enable it.                                                  | Solved |
 
-### Programs Used
+## Programs Used
 
 A comprehensive list of all tools, validators, and programs used throughout the testing process and for this testing documentation. This section provides links and brief descriptions of each tool, helping readers understand the testing methodology and potentially replicate the tests.
 
