@@ -3,7 +3,7 @@
 ![Mockup All-Inclusive](/documentation/features/mockup-all-inclusive.png)
 
 **View the [live project here](https://johnnysontrinh.github.io/all-inclusive/index.html).**<br>
-_(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)
+(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)
 
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/t/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive/commits/main)
 [![GitHub last commit](https://img.shields.io/github/last-commit/JohnnySonTrinh/all-inclusive)](https://github.com/JohnnySonTrinh/all-inclusive/commits/main)
@@ -13,7 +13,7 @@ _(To open in a new window, press "ctrl" (or ⌘ for Mac) + click on the link)
 
 ### Target Audience
 
-- People who embrace inclusivity and accessible web design. The website offers users the opportunity to try using assistive technology without knowing how to use it or having to download any apps to explore it.
+People who embrace inclusivity and accessible web design. The website offers users the opportunity to try using assistive technology without knowing how to use it or having to download any apps to explore it.
 
 ### First Time Visitors Goals
 
@@ -43,10 +43,6 @@ As a frequent visitor,
 ### Site Goals
 
 The site goal are to provide valuable resources and information on inclusive web design and promote online accessibility and inclusivity.
-
-## Scope
-
-The website is fully responsive on all screen sizes.
 
 ## Design
 
@@ -118,19 +114,23 @@ For our inclusive project, we've chosen the Inter font to create an engaging and
 
 #### Inter
 
-Inter is a modern, open-source sans-serif typeface designed by Rasmus Andersson. It is crafted specifically for computer screens, with features that improve legibility at small sizes and on low-resolution displays. Key characteristics of Inter include:
-Tall x-height: Improves readability by making lower-case letters more distinguishable.
-Open letterforms: Enhances clarity by preventing letters from blending together.
-Clear distinctions: Between similar characters like I, l, and 1, reducing confusion.
-Extensive Language Support: Covers a wide range of languages and scripts.
+[Inter](https://fonts.google.com/specimen/Inter) is a modern, open-source sans-serif typeface designed by Rasmus Andersson. It is crafted specifically for computer screens, with features that improve legibility at small sizes and on low-resolution displays. Key characteristics of Inter include:
+- Tall x-height: Improves readability by making lower-case letters more distinguishable.
+- Open letterforms: Enhances clarity by preventing letters from blending together.
+- Clear distinctions: Between similar characters like I, l, and 1, reducing confusion.
+- Extensive Language Support: Covers a wide range of languages and scripts.
 By using Inter, we ensure that our text content is easily readable across various devices and screen sizes, contributing to a better user experience for all visitors.
+
+#### Merriweather
+
+[Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather) is a serif typeface that is also designed for readability for headings.
 
 #### OpenDyslexic
 
-OpenDyslexic is an open-source typeface designed to increase readability for readers with dyslexia. Created by Abelardo Gonzalez, it incorporates unique design features:
-Heavy weighted bottoms: Helps anchor the letters to the baseline, reducing letter flipping and inversion.
-Distinct letter shapes: Differentiates commonly confused characters, such as b and d, or p and q.
-Consistent spacing: Provides uniform spacing between letters and words to improve readability.
+[OpenDyslexic](https://opendyslexic.org/) is an open-source typeface designed to increase readability for readers with dyslexia. Created by Abelardo Gonzalez, it incorporates unique design features:
+- Heavy weighted bottoms: Helps anchor the letters to the baseline, reducing letter flipping and inversion.
+- Distinct letter shapes: Differentiates commonly confused characters, such as b and d, or p and q.
+- Consistent spacing: Provides uniform spacing between letters and words to improve readability.
 By offering OpenDyslexic as a font option in our settings, we aim to make our content more accessible and inclusive, aligning with our commitment to support users with diverse needs.
 
 #### Implementation in CSS
