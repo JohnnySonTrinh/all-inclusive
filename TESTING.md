@@ -55,7 +55,7 @@ No errors were detected when passing through the official [World Wide Web Consor
 <details>
 <summary>Click for Image CSS Validator Testing</summary>
 
-![css-validator](to-do)
+![css-validator](/documentation/validation/validator-css.png)
 
 </details>
 
