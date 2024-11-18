@@ -63,6 +63,82 @@ const audioFiles = [
     id: "skip-links",
     audioPath: "assets/tts/skip-links.mp3",
   },
+  {
+    id: "landmarks",
+    audioPath: "assets/tts/landmarks.mp3",
+  },
+  {
+    id: "focus-control",
+    audioPath: "assets/tts/focus-control.mp3",
+  },
+  {
+    id: "links",
+    audioPath: "assets/tts/links.mp3",
+  },
+  {
+    id: "appearance",
+    audioPath: "assets/tts/appearance.mp3",
+  },
+  {
+    id: "specialized-browsing-modes",
+    audioPath: "assets/tts/specialized-browsing-modes.mp3",
+  },
+  {
+    id: "text-resizing",
+    audioPath: "assets/tts/text-resizing.mp3",
+  },
+  {
+    id: "animation-control",
+    audioPath: "assets/tts/animation-control.mp3",
+  },
+  {
+    id: "audio-controls",
+    audioPath: "assets/tts/audio-controls.mp3",
+  },
+  {
+    id: "video-content",
+    audioPath: "assets/tts/video-content.mp3",
+  },
+  {
+    id: "media-controls",
+    audioPath: "assets/tts/media-controls.mp3",
+  },
+  {
+    id: "form-inputs",
+    audioPath: "assets/tts/form-inputs.mp3",
+  },
+  {
+    id: "form-groups",
+    audioPath: "assets/tts/form-groups.mp3",
+  },
+  {
+    id: "error-handling",
+    audioPath: "assets/tts/error-handling.mp3",
+  },
+  {
+    id: "html-validation",
+    audioPath: "assets/tts/html-validation.mp3",
+  },
+  {
+    id: "page-titles",
+    audioPath: "assets/tts/page-titles.mp3",
+  },
+  {
+    id: "linear-flow",
+    audioPath: "assets/tts/linear-flow.mp3",
+  },
+  {
+    id: "logical-flow",
+    audioPath: "assets/tts/logical-flow.mp3",
+  },
+  {
+    id: "accessibility-validation",
+    audioPath: "assets/tts/accessibility-validation.mp3",
+  },
+  {
+    id: "heading-structure",
+    audioPath: "assets/tts/heading-structure.mp3",
+  },
 ];
 
 export default audioFiles;
