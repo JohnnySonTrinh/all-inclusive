@@ -242,53 +242,7 @@ The project implements a custom HTML error page for the 404 (Not Found) status c
 
 ## Testing
 
-##### Manual Testing
-
-##### Automated Testing
-
-All validator testing was performed on the deployed website.
-
-##### HTML Validator Testing
-
-The HTML code passed through the [World Wide Web Consortium's validator](https://validator.w3.org/) with no errors.
-
-<details>
-<summary>Click for Image HTML Validator Testing</summary>
-
-![html-validator](to-do)
-
-</details>
-
-##### CSS Validator Testing
-
-No errors were detected when passing through the official [World Wide Web Consortium (W3C) validator](https://jigsaw.w3.org/css-validator/) for CSS.
-
-<details>
-<summary>Click for Image CSS Validator Testing</summary>
-
-![css-validator](to-do)
-
-</details>
-
-##### JavaScript Validator Testing
-
-The JavaScript passed without errors through the [JSHint Validator](https://jshint.com/), a JavaScript Code Quality Tool.
-
-<details>
-<summary>Click for Image JavaScript Validator Testing</summary>
-
-![js-validator](/documentation/validation/validator-main.js.png)
-
-</details>
-
-## Bugs
-
-### Known Bugs
-
-Here is the error page featured with the toggled opendyslexic font.
-
-
-![error-page](/documentation/features/feature-error-page.png)
+For comprehensive information on testing procedures and results, please refer to our [TESTING.md](TESTING.md) document.
 
 ### Future Features
 
