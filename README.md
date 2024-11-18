@@ -242,18 +242,16 @@ The Contact page offers the user the chance to contact the All-Inclusive team vi
 
 The project implements a custom HTML error page for the 404 (Not Found) status code to enhance user experience. This error page features a consistent design with the website, provides a clear, user-friendly explanation of the error without technical jargon, and uses straightforward language. Additionally, it includes a visually appealing image that aligns with the website's theme.
 
-![error-page](to-do)
-
-##### Future Features
-
-## Testing
-
-For comprehensive information on testing procedures and results, please refer to our [TESTING.md](TESTING.md) document.
+![error-page](/documentation/features/feature-error-page.png)
 
 ### Future Features
 
 - A choice between different voices so the user can customize their experience.
 - Resize text by toggling a button on the website.
+
+## Testing
+
+For comprehensive information on testing procedures and results, please refer to our [TESTING.md](TESTING.md) document.
 
 ## Technologies Used
 
