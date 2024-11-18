@@ -80,7 +80,7 @@ The JavaScript passed without errors through the [JSHint Validator](https://jshi
 
 ![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-home.png)
 ![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-profiling.png)
-![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-coreconcept.png.png)
+![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-coreconcept.png)
 ![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-about.png)
 ![Lighthouse report mobile](/documentation/validation/lighthouse-mobile-contact.png)
 
