@@ -41,10 +41,6 @@ As a frequent visitor,
 
 The site goal are to provide valuable resources and information on inclusive web design and promote online accessibility and inclusivity.
 
-## Scope
-
-The website is fully responsive on all screen sizes.
-
 ## Design
 
 ### Colour Scheme
