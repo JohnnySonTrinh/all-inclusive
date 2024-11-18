@@ -21,8 +21,10 @@ window.onload = function () {
     // Send form data to EmailJS
     emailjs.sendForm("service_j951ege", "template_u80cpxi", form).then(
       function () {
-        // Success - Notify the user
-        alert("Your message has been sent successfully! We will get back to you soon.");
+        // Success - Show the success modal
+        const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+        successModal.show();
+
         form.reset(); // Clear the form
 
         // Re-enable the submit button
@@ -30,8 +32,9 @@ window.onload = function () {
         submitButton.textContent = "Submit";
       },
       function (error) {
-        // Failure - Notify the user
-        alert("Oops! Something went wrong. Please try again later.");
+        // Failure - Show the failure modal
+        const failureModal = new bootstrap.Modal(document.getElementById("failureModal"));
+        failureModal.show();
 
         // Re-enable the submit button
         submitButton.disabled = false;
